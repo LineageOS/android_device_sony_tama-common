@@ -669,8 +669,6 @@ system/lib/libOmxMux.so
 system/lib/vendor.somc.hardware.swiqi@1.0.so
 vendor/bin/vppservice
 vendor/etc/init/vppservice.rc
-vendor/lib64/libI420colorconvert.so
-vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libmmosal_proprietary.so
 vendor/lib64/libmmparser_lite_proprietary.so
 vendor/lib64/libOmxVpp.so
@@ -687,8 +685,6 @@ vendor/lib64/vendor.somc.hardware.swiqi@1.0-impl.so
 vendor/lib64/vendor.somc.hardware.swiqi@1.0.so
 vendor/lib/libdsd2pcm.so
 vendor/lib/libFileMux_proprietary.so
-vendor/lib/libI420colorconvert.so
-vendor/lib/libmm-color-convertor.so
 vendor/lib/libmmosal_proprietary.so
 vendor/lib/libmmparser_lite_proprietary.so
 vendor/lib/libOmxDsdDec.so
