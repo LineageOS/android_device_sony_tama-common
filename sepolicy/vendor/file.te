@@ -37,6 +37,9 @@ type lta_label, fs_type;
 type persist_credmgr_file, file_type;
 type persist_wlan_file, file_type;
 
+# Power
+type sysfs_msm_subsys, sysfs_type, fs_type;
+
 # QNS
 type qns_data_file, file_type;
 
