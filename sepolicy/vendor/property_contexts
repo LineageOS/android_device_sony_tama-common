@@ -14,4 +14,5 @@ persist.vendor.mlog_qmi.        u:object_r:vendor_radio_prop:s0
 vendor.cover_state              u:object_r:vendor_cover_state_prop:s0
 
 # PowerHAL
-vendor.powerhal.state           u:object_r:power_prop:s0
+vendor.powerhal.audio      u:object_r:power_prop:s0
+vendor.powerhal.state      u:object_r:power_prop:s0
