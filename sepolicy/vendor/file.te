@@ -26,6 +26,9 @@ type idd_root_dir, file_type;
 type idd_socket, file_type;
 type startupprober_file, file_type;
 
+# kobjeventd
+type sysfs_switch_lid, fs_type, sysfs_type;
+
 # LTALabel
 type lta_label, fs_type;
 

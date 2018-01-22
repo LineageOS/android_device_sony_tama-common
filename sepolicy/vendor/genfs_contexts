@@ -21,3 +21,5 @@ genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.q
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/jeita_wlc_thresh_warm u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qpnp,fg/battery_soc u:object_r:sysfs_batteryinfo:s0
 
+genfscon sysfs /devices/virtual/switch/lid/state                u:object_r:sysfs_switch_lid:s0
+
