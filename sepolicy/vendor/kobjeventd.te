@@ -3,4 +3,12 @@ type kobjeventd_exec, exec_type, vendor_file_type, file_type;
 
 init_daemon_domain(kobjeventd)
 
-allow kobjeventd self:netlink_kobject_uevent_socket read;
+allow kobjeventd self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
+
+# /sys/class/switch
+allow kobjeventd sysfs_switch:dir r_dir_perms;
+allow kobjeventd sysfs_switch:{ file lnk_file } r_file_perms;
+
+# /sys/devices/virtual/switch/lid/state
+allow kobjeventd sysfs_switch_lid:file r_file_perms;
+
