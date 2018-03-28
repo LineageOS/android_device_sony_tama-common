@@ -5,6 +5,10 @@
 /data/vendor/etc/wlan.*                                         u:object_r:wifi_vendor_data_file:s0
 /data/vendor/etc/bluetooth.*                                    u:object_r:bluetooth_vendor_data_file:s0
 
+# idd
+/rca(/.*)?                            u:object_r:idd_rca_file:s0
+/idd(/.*)?                            u:object_r:idd_data_file:s0
+
 # PERSIST
 /mnt/vendor/persist/wlan(/.*)?                                  u:object_r:persist_wlan_file:s0
 
