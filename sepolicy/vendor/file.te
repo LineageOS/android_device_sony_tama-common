@@ -4,6 +4,10 @@ type sysfs_camera, fs_type, sysfs_type;
 # Data
 type bluetooth_vendor_data_file, file_type, data_file_type;
 
+# idd
+type idd_data_file, file_type;
+type idd_rca_file, file_type;
+
 # Persist
 type persist_wlan_file, file_type;
 
