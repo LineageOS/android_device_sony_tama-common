@@ -29,9 +29,21 @@
 # Shell scripts
 /(vendor|system/vendor)/bin/init\.qcom\.msim\.sh        u:object_r:init-qcom-msim-sh_exec:s0
 
-# Vendor
-/(vendor|system/vendor)/bin/wait4tad				u:object_r:tad_exec:s0
+# Vendor executables
+/(vendor|system/vendor)/bin/hw/kobjeventd		u:object_r:kobjeventd_exec:s0
+/(vendor|system/vendor)/bin/keyprovd		        u:object_r:keyprovd_exec:s0
+/(vendor|system/vendor)/bin/sct_service			u:object_r:sct_service_exec:s0
+/(vendor|system/vendor)/bin/sensor_json_transfer.sh	u:object_r:qti_init_shell_exec:s0
+/(vendor|system/vendor)/bin/taimport_vendor             u:object_r:taimport_vendor_exec:s0
+/(vendor|system/vendor)/bin/ta_qmi_service	        u:object_r:ta_qmi_service_exec:s0
+/(vendor|system/vendor)/bin/wait4tad			u:object_r:tad_exec:s0
 
-# Vendor services
-/(vendor|system/vendor)/bin/hw/vendor\.somc\.hardware\.camera\.provider@1\.0-service    u:object_r:hal_somc_camera_exec:s0
-/(vendor|system/vendor)/bin/taimport_vendor                     u:object_r:taimport_vendor_exec:s0
+# Vendor HALs
+/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.sony_sdm845       u:object_r:hal_light_default_exec:s0
+/(vendor|system/vendor)/bin/hw/fpc_fingerprint@2\.1_HIDL-service		        u:object_r:hal_fingerprint_fpc_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.semc\.hardware\.secd@1\.0-service		u:object_r:hal_secd_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.semc\.hardware\.thermal@(.*)?		        u:object_r:hal_somc_thermal_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.semc\.system\.idd@1\.0-service    		u:object_r:hal_idd_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.somc\.hardware\.camera\.provider@1\.0-service    u:object_r:hal_somc_camera_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.somc\.hardware\.miscta@1\.0-service		u:object_r:hal_miscta_default_exec:s0
+
