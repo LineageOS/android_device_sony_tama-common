@@ -1,0 +1,6 @@
+# HwBinder IPC from client to server, and callbacks
+binder_call(hal_secd_client, hal_secd_server)
+binder_call(hal_secd_server, hal_secd_client)
+
+add_hwservice(hal_secd_server, hal_secd_hwservice)
+allow hal_secd_client hal_secd_hwservice:hwservice_manager find;
