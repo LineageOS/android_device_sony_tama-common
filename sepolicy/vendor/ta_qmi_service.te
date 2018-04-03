@@ -2,3 +2,16 @@ type ta_qmi_service, domain;
 type ta_qmi_service_exec, exec_type, vendor_file_type, file_type;
 
 init_daemon_domain(ta_qmi_service)
+
+# Allow ta_qmi_service to have the CAP_BLOCK_SUSPEND capability
+wakelock_use(ta_qmi_service)
+
+# Allow ta_qmi_service to access tad
+unix_socket_connect(ta_qmi_service, tad, tad)
+
+# Allow ta_qmi_service to use net_raw, setgid and setuid capabilities
+allow ta_qmi_service self:capability { net_raw setgid setuid };
+
+# Allow ta_qmi_service to create self:socket
+allow ta_qmi_service self:socket create_socket_perms;
+allowxperm ta_qmi_service self:socket ioctl msm_sock_ipc_ioctls;
