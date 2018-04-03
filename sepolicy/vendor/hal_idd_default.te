@@ -3,3 +3,7 @@ hal_server_domain(hal_idd_default, hal_idd)
 
 type hal_idd_default_exec, exec_type, vendor_file_type, file_type;
 init_daemon_domain(hal_idd_default)
+
+# Allow hal_idd_default to read and write in idd_socket_file
+allow hal_idd_default idd_socket_file:dir r_dir_perms;
+allow hal_idd_default idd_socket_file:sock_file rw_file_perms;
