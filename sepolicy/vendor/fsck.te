@@ -1,0 +1,2 @@
+# Allow fsck to read and write to appslog_block_device, diag_block_device
+allow fsck { appslog_block_device diag_block_device }:blk_file rw_file_perms;
