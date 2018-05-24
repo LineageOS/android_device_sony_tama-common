@@ -33,3 +33,4 @@ genfscon sysfs /devices/platform/soc/soc:qcom,llccbw            u:object_r:sysfs
 genfscon sysfs /devices/platform/soc/soc:qcom,mincpubw          u:object_r:sysfs_msm_subsys:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,gpubw             u:object_r:sysfs_msm_subsys:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,cpubw             u:object_r:sysfs_msm_subsys:s0
+genfscon proc /sys/kernel/sched_boost                           u:object_r:proc_sysctl_schedboost:s0
