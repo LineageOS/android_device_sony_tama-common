@@ -2,6 +2,7 @@ typeattribute hal_camera_default data_between_core_and_vendor_violators;
 
 binder_call(hal_camera_default, cameraserver)
 binder_call(hal_camera_default, hal_idd_default)
+binder_call(hal_camera_default, cacaoserver)
 
 # Allow hal_camera_default to add and find hal_somc_camera_hwservice
 allow hal_camera_default hal_somc_camera_hwservice:hwservice_manager { find add };

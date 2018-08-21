@@ -1,0 +1,3 @@
+# mediacodec.te
+
+binder_call(mediacodec, cacaoserver)

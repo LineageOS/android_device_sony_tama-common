@@ -1,0 +1,2 @@
+binder_call(platform_app, cacaoserver)
+allow platform_app cacaoserver_service:service_manager find;

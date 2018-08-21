@@ -1,0 +1,3 @@
+# mediaserver.te
+
+binder_call(mediaserver, cacaoserver)
