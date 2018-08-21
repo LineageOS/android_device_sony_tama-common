@@ -1,4 +1,36 @@
+# cacaoserver.te
 type cacaoserver, domain;
-type cacaoserver_exec, exec_type, file_type;
+type cacaoserver_exec, exec_type, file_type, system_file_type;
+
+typeattribute cacaoserver coredomain;
 
 init_daemon_domain(cacaoserver)
+
+add_service(cacaoserver, cacaoserver_service)
+
+binder_use(cacaoserver)
+hwbinder_use(cacaoserver)
+get_prop(cacaoserver, hwservicemanager_prop)
+binder_call(cacaoserver, hal_somc_camera_default)
+binder_call(cacaoserver, mediaserver)
+binder_call(cacaoserver, mediacodec)
+binder_call(cacaoserver, system_server)
+binder_call(cacaoserver, platform_app)
+binder_call(cacaoserver, hal_graphics_allocator_default)
+
+hal_client_domain(cacaoserver, hal_camera)
+hal_client_domain(cacaoserver, hal_graphics_allocator)
+
+allow cacaoserver hal_graphics_mapper_hwservice:hwservice_manager { find };
+allow cacaoserver hidl_token_hwservice:hwservice_manager { find };
+
+allow cacaoserver permission_service:service_manager { find };
+
+# /dev/ion
+allow cacaoserver ion_device:chr_file r_file_perms;
+
+# android.hardware.graphics.mapper@2.0-impl.so
+allow cacaoserver same_process_hal_file:file { execute r_file_perms };
+
+r_dir_file(hwservicemanager, cacaoserver)
+r_dir_file(servicemanager, cacaoserver)
