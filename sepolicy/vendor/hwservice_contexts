@@ -6,7 +6,7 @@ com.fingerprints.extension::IFingerprintSensorTest                u:object_r:fpc
 vendor.nxp.eventprocessor::INxpEseEvtProcessor                    u:object_r:hal_secure_element_hwservice:s0
 vendor.nxp.nxpnfc::INxpNfc                                        u:object_r:hal_nxpnfc_hwservice:s0
 vendor.nxp.nxpese::INxpEse                                        u:object_r:hal_secure_element_hwservice:s0
-vendor.semc.hardware.secd::IDeviceSecurity                        u:object_r:hal_secd_hwservice:s0
+vendor.somc.hardware.security.secd::IDeviceSecurity               u:object_r:hal_secd_hwservice:s0
 vendor.semc.hardware.thermal::ISomcThermalEngineWrapper           u:object_r:hal_somc_thermal_hwservice:s0
 vendor.semc.system.idd::IIdd                                      u:object_r:hal_idd_hwservice:s0
 vendor.somc.hardware.camera.provider::IVendorSomcCameraProvider   u:object_r:hal_somc_camera_hwservice:s0
