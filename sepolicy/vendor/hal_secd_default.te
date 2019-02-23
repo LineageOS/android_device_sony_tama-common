@@ -3,3 +3,13 @@ hal_server_domain(hal_secd_default, hal_secd)
 
 type hal_secd_default_exec, exec_type, vendor_file_type, file_type;
 init_daemon_domain(hal_secd_default)
+
+# Allow hal_secd_default to read and write to tee_device
+allow hal_secd_default tee_device:chr_file rw_file_perms;
+
+# Allow hal_secd_default to read, write and create files in mnt_vendor_file
+allow hal_secd_default mnt_vendor_file:dir rw_dir_perms;
+allow hal_secd_default mnt_vendor_file:file rw_file_perms;
+
+# Allow hal_secd_default to get vendor_tee_listener_prop
+get_prop(hal_secd_default, vendor_tee_listener_prop)
