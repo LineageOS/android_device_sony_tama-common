@@ -1,2 +1,5 @@
 # Allow hal_nfc_default to search in nfc_vendor_data_file
 allow hal_nfc_default nfc_vendor_data_file:dir search;
+
+# Allow hal_nfc_default to add and find hal_nxpnfc_hwservice
+allow hal_nfc_default hal_nxpnfc_hwservice:hwservice_manager { find add };
