@@ -16,7 +16,13 @@ type sysfs_fingerprint, fs_type, sysfs_type;
 
 # idd
 type idd_data_file, file_type;
+type idd_input_file, file_type;
+type idd_lostfound_file, file_type;
+type idd_output_file, file_type;
+type idd_private_file, file_type;
 type idd_rca_file, file_type;
+type idd_socket_file, file_type;
+type startupprober_file, file_type;
 
 # LTALabel
 type lta_label, fs_type;
