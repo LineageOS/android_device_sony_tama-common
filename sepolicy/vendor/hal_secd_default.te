@@ -19,3 +19,10 @@ get_prop(hal_secd_default, vendor_tee_listener_prop)
 allow hal_secd_default ion_device:chr_file r_file_perms;
 
 unix_socket_connect(hal_secd_default, tad, tad)
+
+# /mnt/vendor/persist/credmgr.db
+allow hal_secd_default persist_credmgr_file:file create_file_perms;
+
+# /persist/pc/
+allow hal_secd_default simpin_cache_data_file:dir rw_dir_perms;
+allow hal_secd_default simpin_cache_data_file:file create_file_perms;
