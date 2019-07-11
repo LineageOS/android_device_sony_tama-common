@@ -21,3 +21,6 @@ set_prop(vendor_init, vendor_power_prop)
 
 # Allow vendor init to set cust_system_prop
 set_prop(vendor_init, cust_system_prop)
+
+# Allow vendor_init to write to sysfs_ssr_toggle
+allow vendor_init sysfs_ssr_toggle:file w_file_perms;

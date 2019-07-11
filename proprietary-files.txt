@@ -1319,10 +1319,6 @@ vendor/lib64/libscvePanorama.so
 vendor/lib64/libscvePanorama_lite.so
 vendor/lib64/libscveScan3D.so
 
-# SSR
-vendor/bin/ssr_setup
-vendor/bin/subsystem_ramdump
-
 # TA daemon
 vendor/bin/tad
 

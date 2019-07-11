@@ -36,3 +36,13 @@ genfscon sysfs /devices/platform/soc/soc:qcom,cpubw             u:object_r:sysfs
 genfscon proc /sys/kernel/sched_boost                           u:object_r:proc_sysctl_schedboost:s0
 genfscon debugfs /wlan0                                         u:object_r:debugfs_wlan:s0
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/idle_state          u:object_r:sysfs_graphics:s0
+
+# SSR
+genfscon sysfs /devices/platform/soc/188101c.qcom,spss/subsys0/restart_level   u:object_r:sysfs_ssr_toggle:s0
+genfscon sysfs /devices/platform/soc/aae0000.qcom,venus/subsys1/restart_level  u:object_r:sysfs_ssr_toggle:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,ipa_fws/subsys2/restart_level    u:object_r:sysfs_ssr_toggle:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,kgsl-hyp/subsys3/restart_level   u:object_r:sysfs_ssr_toggle:s0
+genfscon sysfs /devices/platform/soc/17300000.qcom,lpass/subsys4/restart_level u:object_r:sysfs_ssr_toggle:s0
+genfscon sysfs /devices/platform/soc/5c00000.qcom,ssc/subsys5/restart_level    u:object_r:sysfs_ssr_toggle:s0
+genfscon sysfs /devices/platform/soc/8300000.qcom,turing/subsys6/restart_level u:object_r:sysfs_ssr_toggle:s0
+genfscon sysfs /devices/platform/soc/4080000.qcom,mss/subsys7/restart_level    u:object_r:sysfs_ssr_toggle:s0
