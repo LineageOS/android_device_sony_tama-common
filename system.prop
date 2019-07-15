@@ -12,6 +12,9 @@ ro.kernel.ebpf.supported=true
 # Bluetooth
 persist.bluetooth.avrcpversion=avrcp16
 
+# Charger
+ro.charger.enable_suspend=true
+
 # CNE
 persist.vendor.cne.feature=1
 
