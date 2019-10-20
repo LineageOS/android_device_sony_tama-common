@@ -1,3 +1,6 @@
+# Allow access to the HALs
+hal_client_domain(hal_nfc_default, hal_secure_element)
+
 # Allow hal_nfc_default to create, read and write in nfc_vendor_data_file
 allow hal_nfc_default nfc_vendor_data_file:dir create_dir_perms;
 allow hal_nfc_default nfc_vendor_data_file:file create_file_perms;
