@@ -1,2 +1,5 @@
 # Allow fsck to read and write to appslog_block_device, diag_block_device
 allow fsck { appslog_block_device diag_block_device }:blk_file rw_file_perms;
+
+# Allow fsck to getattr on idd_rca_dir, idd_root_dir
+allow fsck { idd_rca_dir idd_root_dir }:dir getattr;
