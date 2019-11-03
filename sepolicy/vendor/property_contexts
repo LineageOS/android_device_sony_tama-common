@@ -6,3 +6,4 @@ vendor.camera.sensor.		u:object_r:vendor_camera_sensor_prop:s0
 persist.nfc.config_file_name    u:object_r:vendor_nfc_prop:s0
 persist.vendor.ese.             u:object_r:vendor_nfc_prop:s0
 ro.audio.soundtrigger.          u:object_r:soundtrigger_prop:s0
+vendor.cover_state              u:object_r:vendor_cover_state_prop:s0
