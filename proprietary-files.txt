@@ -237,6 +237,7 @@ vendor/lib64/libwms.so
 vendor/lib64/libwqe.so
 vendor/lib64/libxml.so
 vendor/lib64/vendor.qti.data.factory@2.0.so
+vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 vendor/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so
 vendor/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so
 vendor/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so
@@ -255,6 +256,7 @@ vendor/lib/libwms.so
 vendor/lib/libwqe.so
 vendor/lib/libxml.so
 vendor/lib/vendor.qti.data.factory@2.0.so
+vendor/lib/vendor.qti.hardware.cacert@1.0.so
 vendor/lib/vendor.qti.hardware.data.cne.internal.api@1.0.so
 vendor/lib/vendor.qti.hardware.data.cne.internal.constants@1.0.so
 vendor/lib/vendor.qti.hardware.data.cne.internal.server@1.0.so
