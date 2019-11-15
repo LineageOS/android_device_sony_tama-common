@@ -31,9 +31,6 @@ debug.sf.latch_unsignaled=1
 # Media
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
-# Netflix custom property
-ro.netflix.bsp_rev=Q845-05000-1
-
 # QC framework value-adds
 ro.vendor.qti.va_aosp.support=1
 
