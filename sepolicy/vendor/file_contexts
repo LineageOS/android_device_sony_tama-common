@@ -1,6 +1,9 @@
 # Audio effects
 /dev/sony_hweffect_params		u:object_r:audio_hweffect_device:s0
 
+# Block devices
+/dev/block/platform/soc/1d84000\.ufshc/by-name/LTALabel    u:object_r:ltalabel_block_device:s0
+
 # Dev
 /dev/socket/tad                                                 u:object_r:tad_socket:s0
 
@@ -22,6 +25,9 @@
 # SoMC camera sockets
 /dev/socket/cammw_excal:ipc:9000		u:object_r:hal_camera_somc_socket:s0
 /dev/socket/cammw_excal:ipc:9001		u:object_r:hal_camera_somc_socket:s0
+
+# Shell scripts
+/(vendor|system/vendor)/bin/init\.qcom\.msim\.sh        u:object_r:init-qcom-msim-sh_exec:s0
 
 # Vendor
 /(vendor|system/vendor)/bin/wait4tad				u:object_r:tad_exec:s0
