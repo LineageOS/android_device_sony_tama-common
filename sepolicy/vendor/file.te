@@ -16,6 +16,9 @@ type sysfs_fingerprint, fs_type, sysfs_type;
 type idd_data_file, file_type;
 type idd_rca_file, file_type;
 
+# LTALabel
+type lta_label, fs_type;
+
 # Persist
 type persist_wlan_file, file_type;
 

@@ -1,0 +1,2 @@
+# Allow init to read files in /lta-label
+r_dir_file(init, lta_label)
