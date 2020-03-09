@@ -8,6 +8,8 @@ BUILD_BROKEN_DUP_RULES := true
 
 BOARD_VENDOR := sony
 
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+
 COMMON_PATH := device/sony/tama-common
 
 # Architecture
