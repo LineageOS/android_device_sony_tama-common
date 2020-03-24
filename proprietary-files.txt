@@ -776,11 +776,23 @@ vendor/lib64/unnhal-acc-hvx.so
 vendor/lib/rfsa/adsp/libhexagon_nn_skel.so
 
 # NFC
+vendor/bin/hw/android.hardware.nfc@1.2-service
+vendor/etc/init/android.hardware.nfc@1.2-service.rc
 vendor/lib64/ese_client.so
+vendor/lib64/ese_spi_nxp.so
 vendor/lib64/hal_libnfc.so
 vendor/lib64/libpn553_fw.so
+vendor/lib64/nfc_nci_nxp.so
+vendor/lib64/vendor.nxp.eventprocessor@1.0.so
+vendor/lib64/vendor.nxp.nxpese@1.0.so
+vendor/lib64/vendor.nxp.nxpnfc@1.0.so
 vendor/lib/ese_client.so
+vendor/lib/ese_spi_nxp.so
 vendor/lib/hal_libnfc.so
+vendor/lib/nfc_nci_nxp.so
+vendor/lib/vendor.nxp.eventprocessor@1.0.so
+vendor/lib/vendor.nxp.nxpese@1.0.so
+vendor/lib/vendor.nxp.nxpnfc@1.0.so
 
 # Peripheral manager
 vendor/bin/pm-proxy
