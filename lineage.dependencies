@@ -1,0 +1,6 @@
+[
+  {
+    "repository": "android_kernel_sony_sdm845",
+    "target_path": "kernel/sony/sdm845"
+  }
+]
