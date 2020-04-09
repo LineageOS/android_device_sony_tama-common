@@ -1,0 +1,3 @@
+# qns fstab file.
+#<src>                                   <mnt_point>        <type> <mnt_flags and options>                          <fs_mgr_flags>
+/dev/block/bootdevice/by-name/Qnovo      /mnt/qns           ext4   nosuid,nodev,noatime,noexec,barrier=1,discard    wait,check,formattable,notrim
