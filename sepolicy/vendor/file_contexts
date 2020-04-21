@@ -6,3 +6,6 @@
 
 # Rootfs
 /sbin/tad_static                                                u:object_r:rootfs:s0
+
+# Vendor services
+/(vendor|system/vendor)/bin/hw/vendor\.somc\.hardware\.camera\.provider@1\.0-service    u:object_r:hal_somc_camera_exec:s0
