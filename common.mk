@@ -243,6 +243,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sdm
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.sony_sdm845
+
 # Media
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
