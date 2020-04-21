@@ -1,0 +1,8 @@
+# Dev
+/dev/socket/tad                                                 u:object_r:tad_socket:s0
+
+# Vendor
+/(vendor|system/vendor)/bin/wait4tad				u:object_r:tad_exec:s0
+
+# Rootfs
+/sbin/tad_static                                                u:object_r:rootfs:s0
