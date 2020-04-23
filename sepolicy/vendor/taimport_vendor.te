@@ -19,15 +19,28 @@ file_type_auto_trans(taimport_vendor, mnt_vendor_file, persist_wlan_file)
 allow taimport_vendor vendor_data_file:dir { rw_dir_perms };
 
 # /data/vendor/etc/wlan_*
-type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_macaddr0";
-type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_txpower_2_4g";
-type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_txpower_5g_low";
-type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_txpower_5g_mid";
-type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_txpower_5g_high";
-type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_txpower_co1_2_4g";
-type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_txpower_co1_5g_low";
-type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_txpower_co1_5g_mid";
+type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_rssi_cal_5g_w58";
+type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_rssi_cal_5g_w56";
+type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_rssi_cal_5g_w53";
+type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_rssi_cal_5g_w52";
+type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_rssi_cal_2_4g";
+type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_rssi_cal_co1_5g_w58";
+type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_rssi_cal_co1_5g_w56";
+type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_rssi_cal_co1_5g_w53";
+type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_rssi_cal_co1_5g_w52";
+type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_rssi_cal_co1_2_4g";
 type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_txpower_co1_5g_high";
+type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_txpower_co1_5g_mid";
+type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_txpower_co1_5g_low";
+type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_txpower_co1_2_4g";
+type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_txpower_5g_high";
+type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_txpower_5g_mid";
+type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_txpower_5g_low";
+type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_txpower_2_4g";
+type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_macaddr3";
+type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_macaddr2";
+type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_macaddr1";
+type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_macaddr0";
 allow taimport_vendor wifi_vendor_data_file:file { create_file_perms };
 
 # /data/vendor/etc/bluetooth_*
