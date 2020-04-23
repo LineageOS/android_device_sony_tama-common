@@ -1,2 +1,8 @@
+# DATA
+type bluetooth_vendor_data_file, file_type, data_file_type;
+
 # Soscket
 type tad_socket, file_type;
+
+# PERIST
+type persist_wlan_file, file_type;

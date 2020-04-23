@@ -1,6 +1,13 @@
 # Dev
 /dev/socket/tad                                                 u:object_r:tad_socket:s0
 
+# DATA
+/data/vendor/etc/wlan.*                                         u:object_r:wifi_vendor_data_file:s0
+/data/vendor/etc/bluetooth.*                                    u:object_r:bluetooth_vendor_data_file:s0
+
+# PERSIST
+/mnt/vendor/persist/wlan(/.*)?                                  u:object_r:persist_wlan_file:s0
+
 # Vendor
 /(vendor|system/vendor)/bin/wait4tad				u:object_r:tad_exec:s0
 
@@ -9,3 +16,4 @@
 
 # Vendor services
 /(vendor|system/vendor)/bin/hw/vendor\.somc\.hardware\.camera\.provider@1\.0-service    u:object_r:hal_somc_camera_exec:s0
+/(vendor|system/vendor)/bin/taimport_vendor                     u:object_r:taimport_vendor_exec:s0
