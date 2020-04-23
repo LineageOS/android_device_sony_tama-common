@@ -1,0 +1,39 @@
+# taimport_vendor.te
+
+type taimport_vendor, domain;
+type taimport_vendor_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(taimport_vendor)
+
+unix_socket_connect(taimport_vendor, tad, tad)
+
+allow taimport_vendor self:capability {
+    setgid
+};
+
+set_prop(taimport_vendor, vendor_semc_version_cust_active_prop);
+
+file_type_auto_trans(taimport_vendor, mnt_vendor_file, persist_wlan_file)
+
+# /data/vendor/etc
+allow taimport_vendor vendor_data_file:dir { rw_dir_perms };
+
+# /data/vendor/etc/wlan_*
+type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_macaddr0";
+type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_txpower_2_4g";
+type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_txpower_5g_low";
+type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_txpower_5g_mid";
+type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_txpower_5g_high";
+type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_txpower_co1_2_4g";
+type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_txpower_co1_5g_low";
+type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_txpower_co1_5g_mid";
+type_transition taimport_vendor vendor_data_file:file wifi_vendor_data_file "wlan_txpower_co1_5g_high";
+allow taimport_vendor wifi_vendor_data_file:file { create_file_perms };
+
+# /data/vendor/etc/bluetooth_*
+type_transition taimport_vendor vendor_data_file:file bluetooth_vendor_data_file "bluetooth_bdaddr";
+allow taimport_vendor bluetooth_vendor_data_file:file { create_file_perms };
+
+# /persist/wlan
+allow taimport_vendor persist_wlan_file:dir { rw_dir_perms };
+allow taimport_vendor persist_wlan_file:file { create_file_perms };
