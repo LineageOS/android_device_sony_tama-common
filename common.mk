@@ -166,15 +166,17 @@ PRODUCT_PACKAGES += \
 
 # Common init scripts
 PRODUCT_PACKAGES += \
-    01AD-483238533751333032424D5220202020-A002.bin \
     0198-54484741463847395434334241495242-0300.bin \
+    01AD-483238533751333032424D5220202020-A002.bin \
     fstab.qcom \
     idd.fstab \
+    init.class_main.sh \
     init.msm.usb.configfs.rc \
     init.qcom.early_boot.sh \
+    init.qcom.factory.rc \
     init.qcom.post_boot.sh \
-    init.qcom.rc \
     init.qcom.power.rc \
+    init.qcom.rc \
     init.qcom.sensors.sh \
     init.qcom.sh \
     init.qcom.usb.rc \

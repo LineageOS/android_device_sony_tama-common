@@ -31,7 +31,6 @@
 
 import /vendor/etc/init/hw/init.qcom.usb.rc
 #import /vendor/etc/init/hw/init.msm.usb.configfs.rc
-import /vendor/etc/init/hw/init.qcom.test.rc
 import /vendor/etc/init/hw/init.target.rc
 import /vendor/etc/init/hw/init.qcom.factory.rc
 
@@ -87,7 +86,7 @@ on init
     chown oem_2997 oem_2997 /dev/block/sda1
     chmod 0770 /dev/block/sda1
     class_start trimarea
-    #exec u:r:tad:s0 system -- /vendor/bin/wait4tad
+    start tad
 
     # These are needed for MiscTA HIDL service
     start hwservicemanager
@@ -181,7 +180,6 @@ on early-boot
     write /sys/kernel/boot_slpi/boot 1
     write /sys/devices/virtual/cvp/cvp/boot 1
     exec u:r:qti_init_shell:s0 -- /vendor/bin/init.qcom.early_boot.sh
-    exec u:r:qti_init_shell:s0 -- /vendor/bin/init.qti.can.sh
 
     # for backward compatibility
     chown system system /persist/sensors
@@ -589,6 +587,9 @@ on post-fs-data
     # Create vpp directory
     mkdir /data/vendor/vpp 0770 media media
 
+    start vendor.netmgrd
+    start vendor.port-bridge
+
     # Create dir for TUI
     mkdir /data/vendor/tui 0700 system drmrpc
 
@@ -963,11 +964,6 @@ on property:persist.vendor.battery.smt_chg=charging_resume
 on property:persist.bluetooth.a2dp_offload.disabled=true
     setprop persist.bluetooth.a2dp_offload.disabled false
 
-service qcom-c_core-sh  /vendor/bin/init.qcom.class_core.sh
-    class core
-    user root
-    oneshot
-
 service qcom-c_main-sh /vendor/bin/init.class_main.sh
     class main
     user root
@@ -976,6 +972,9 @@ service qcom-c_main-sh /vendor/bin/init.class_main.sh
 on property:vold.decrypt=trigger_restart_framework
     start qcom-c_main-sh
     start wcnss-service
+    start vendor.ipacm-diag
+    start vendor.netmgrd
+    start vendor.port-bridge
 
 on property:persist.env.fastdorm.enabled=true
     setprop persist.radio.data_no_toggle 1
@@ -1525,6 +1524,13 @@ on property:ro.vendor.radio.noril=*
 #    user system
 #    group system
 
+service vendor.port-bridge /vendor/bin/port-bridge
+    class main
+    user radio
+    group radio system inet
+    disabled
+    oneshot
+
 service vendor.power_off_alarm /vendor/bin/power_off_alarm
     class core
     group system
@@ -1615,6 +1621,18 @@ service vendor.imsrcsservice /vendor/bin/imsrcsd
     class main
     user radio
     group radio vendor_qti_diag log inet wakelock
+
+service vendor.ipacm /vendor/bin/ipacm
+    class main
+    user radio
+    group radio inet
+
+service vendor.ipacm-diag /vendor/bin/ipacm-diag
+    class main
+    user radio
+    socket ipacm_log_file dgram 660 radio radio
+    group radio diag
+    disabled
 
 # imsdatadaemon starts with root and UID will be downgraded to RADIO.
 service vendor.ims_rtp_daemon /vendor/bin/ims_rtp_daemon
@@ -1725,6 +1743,12 @@ service vendor.qseecomd /vendor/bin/qseecomd
     class core
     user root
     group root
+
+service vendor.dataqti /vendor/bin/qti
+    class main
+    user radio
+    group radio oem_2901 diag usb net_admin
+    disabled
 
 service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
     class main
