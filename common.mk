@@ -184,6 +184,7 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     init.target.rc \
     qns.fstab \
+    sensor_json_transfer.sh \
     ueventd.qcom.rc
 
 # Context Hub
@@ -329,8 +330,6 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0-impl \
-    android.hardware.sensors@1.0-service \
     libsensorndkbridge
 
 # Soong namespaces
