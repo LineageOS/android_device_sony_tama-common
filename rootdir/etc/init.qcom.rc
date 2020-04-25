@@ -1778,15 +1778,15 @@ service fps_hal /vendor/bin/hw/fpc_fingerprint@2.1_HIDL-service
     group system input
     socket fpc_oem stream 0660 system system
 
-#service vendor.somc.hardware.camera-provider-1-0 /vendor/bin/hw/vendor.somc.hardware.camera.provider@1.0-service
-#    class hal
-#    user cameraserver
-#    group camera audio input drmrpc oem_2993 oem_2996
-#    ioprio rt 4
-#    capabilities SYS_NICE
-#    writepid /dev/cpuset/camera-daemon/tasks /dev/stune/top-app/tasks
-#    socket cammw_excal:ipc:9000 stream 0660 cameraserver camera
-#    socket cammw_excal:ipc:9001 stream 0660 cameraserver camera
+service vendor.somc.hardware.camera-provider-1-0 /vendor/bin/hw/vendor.somc.hardware.camera.provider@1.0-service
+    class hal
+    user cameraserver
+    group camera audio input drmrpc oem_2993 oem_2996
+    ioprio rt 4
+    capabilities SYS_NICE
+    writepid /dev/cpuset/camera-daemon/tasks /dev/stune/top-app/tasks
+    socket cammw_excal:ipc:9000 stream 0660 cameraserver camera
+    socket cammw_excal:ipc:9001 stream 0660 cameraserver camera
 
 # start secd service
 service vendor.semc.hardware.secd-1-0 /vendor/bin/hw/vendor.semc.hardware.secd@1.0-service
