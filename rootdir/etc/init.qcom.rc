@@ -154,7 +154,7 @@ on post-fs
 
     # Transfer sensor json files
     chown system system /mnt/vendor/persist/sensors
-    #exec u:r:qti_init_shell:s0 system -- /vendor/bin/sensor_json_transfer.sh
+    exec system -- /vendor/bin/sensor_json_transfer.sh
     
     start vendor.qseecomd
 
