@@ -422,7 +422,7 @@ on post-fs-data
     # SONY: Start early TA-users
     mkdir /data/vendor/etc 0755 root shell
     mkdir /mnt/vendor/persist/wlan 0755 root shell
-    start vendor.taimport   
+    exec u:r:taimport_vendor:s0 -- /vendor/bin/taimport_vendor
     
     # Create NETMGR daemon log dir
     mkdir /data/vendor/netmgr 0770 radio radio
@@ -1686,10 +1686,6 @@ service mlog_qmi_service /vendor/bin/mlog_qmi_service
 
 # Secure Config Transfer service
 service sct_service /vendor/bin/sct_service
-   user root
-   disabled
-
-service vendor.taimport /vendor/bin/taimport_vendor
    user root
    disabled
 
