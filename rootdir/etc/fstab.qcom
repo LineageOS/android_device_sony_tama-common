@@ -53,4 +53,3 @@
 /dev/block/bootdevice/by-name/frp                       /persistent        emmc    defaults                                             defaults
 /dev/block/bootdevice/by-name/misc                      /misc              emmc    defaults                                             defaults
 /dev/block/zram0                                        none               swap    defaults                                             zramsize=1073741824
-/dev/block/bootdevice/by-name/oem                       /oem               ext4    ro,barrier=1                                         wait,slotselect
