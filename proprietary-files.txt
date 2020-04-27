@@ -1109,7 +1109,6 @@ vendor/bin/subsystem_ramdump
 
 # TA daemon
 vendor/bin/tad
--sbin/tad_static;rootfs
 
 # TA QMI
 vendor/bin/taimport_vendor
