@@ -411,6 +411,10 @@ on boot
 
 # msm specific files that need to be created on /data
 on post-fs-data
+    #Create DATAQTI dir for logs
+    mkdir /data/vendor/dataqti 0770 radio radio
+    chmod 0770 /data/vendor/dataqti
+
     # create spc database directory
     mkdir /mnt/vendor/persist/pc/ 0770 radio system
     chown system system /mnt/vendor/persist/pc/cache_0.dat
@@ -1743,7 +1747,8 @@ service vendor.qseecomd /vendor/bin/qseecomd
 service vendor.dataqti /vendor/bin/qti
     class main
     user radio
-    group radio oem_2901 diag usb net_admin
+    socket qti_dpm_uds_file dgram 660 radio radio
+    group radio oem_2901 diag usb inet
     disabled
 
 service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
