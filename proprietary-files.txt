@@ -1131,9 +1131,7 @@ vendor/etc/firmware/tztpm.mdt
 # Thermal engine
 vendor/bin/hw/vendor.semc.hardware.thermal@1.0-service
 vendor/bin/thermal-engine
-vendor/etc/change.cfg
 vendor/etc/init/vendor.semc.hardware.thermal@1.0-service.rc
-vendor/etc/thermal-engine.conf
 vendor/lib64/hw/thermal.somc.so
 vendor/lib64/libsomc_thermal.so
 -vendor/lib64/libthermalclient.so
