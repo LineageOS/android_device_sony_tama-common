@@ -1,0 +1,6 @@
+persist.vendor.bt.a2dp.		u:object_r:vendor_bt_a2dp_prop:s0
+persist.vendor.dpm.feature	u:object_r:vendor_dpm_feature_prop:s0
+persist.demo.			u:object_r:demo_prop:s0
+ril.subscription.		u:object_r:ril_subscription_prop:s0
+vendor.camera.sensor.		u:object_r:vendor_camera_sensor_prop:s0
+
