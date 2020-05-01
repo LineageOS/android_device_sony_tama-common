@@ -1,0 +1,19 @@
+genfscon sysfs /devices/virtual/input/input4/chip_pow    u:object_r:sysfs_camera:s0
+
+genfscon sysfs /devices/platform/soc/soc:fpc1145		u:object_r:sysfs_fingerprint:s0
+
+genfscon sysfs /devices/platform/soc/soc:ldo_vibrator/leds/vibrator/activate    u:object_r:sysfs_leds:s0
+genfscon sysfs /devices/platform/soc/soc:ldo_vibrator/leds/vibrator/duration    u:object_r:sysfs_leds:s0
+genfscon sysfs /devices/platform/soc/soc:ldo_vibrator/leds/vibrator/state       u:object_r:sysfs_leds:s0
+genfscon sysfs /devices/platform/soc/soc:ldo_vibrator/leds/vibrator/trigger     u:object_r:sysfs_leds:s0
+
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/jeita_aux_condition u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/jeita_aux_thresh_hot u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/jeita_aux_thresh_warm u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/jeita_batt_condition u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/jeita_debug_log_interval u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/jeita_wireless_condition u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/jeita_wlc_thresh_hot u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/jeita_wlc_thresh_warm u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qpnp,fg/battery_soc u:object_r:sysfs_batteryinfo:s0
+
