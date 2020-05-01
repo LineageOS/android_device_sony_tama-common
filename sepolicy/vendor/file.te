@@ -1,8 +1,14 @@
-# DATA
+# Camera
+type sysfs_camera, fs_type, sysfs_type;
+
+# Data
 type bluetooth_vendor_data_file, file_type, data_file_type;
 
-# Soscket
-type tad_socket, file_type;
+# Fingerprint sensor
+type sysfs_fps_attr, fs_type, sysfs_type;
 
-# PERIST
+# Persist
 type persist_wlan_file, file_type;
+
+# Socket
+type tad_socket, file_type;
