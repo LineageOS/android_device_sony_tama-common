@@ -1,0 +1,6 @@
+# Allow vendor_init to set some props
+set_prop(vendor_init, vendor_bt_a2dp_prop)
+set_prop(vendor_init, vendor_dpm_feature_prop)
+set_prop(vendor_init, demo_prop)
+set_prop(vendor_init, ril_subscription_prop)
+set_prop(vendor_init, vendor_camera_sensor_prop)
