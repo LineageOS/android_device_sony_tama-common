@@ -667,9 +667,6 @@ vendor/lib/libmulawdec.so
 vendor/lib/libsmwrapper.so
 
 # Light
-vendor/etc/permissions/android.hardware.light.xml
-vendor/bin/hw/vendor.semc.hardware.light@1.0-service
-vendor/etc/init/vendor.semc.hardware.light@1.0-service.rc
 vendor/lib/vendor.semc.hardware.light@1.0.so
 vendor/lib64/vendor.semc.hardware.light@1.0.so
 
