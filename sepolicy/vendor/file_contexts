@@ -34,6 +34,9 @@
 /mnt/idd/socket/idd_co_stream             u:object_r:idd_socket:s0
 /mnt/idd/startup-prober(/.*)?             u:object_r:startupprober_file:s0
 
+# OEM subdirectory
+/vendor/oem(/.*)?                             u:object_r:vendor_oem_file:s0
+
 # NFC
 /dev/pn553                u:object_r:nfc_device:s0
 

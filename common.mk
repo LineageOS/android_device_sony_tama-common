@@ -276,6 +276,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
+# Modem switcher
+ifneq ($(filter %_kirin %_mermaid,$(TARGET_PRODUCT)),)
+PRODUCT_PACKAGES += \
+    ModemConfig
+
+PRODUCT_COPY_FILES += \
+    $(shell find $(LOCAL_PATH)/rootdir/vendor/oem -type f -printf '%p:$(TARGET_COPY_OUT_VENDOR)/oem/%P\n')
+endif
+
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
