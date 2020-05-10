@@ -3,6 +3,7 @@ type modem-switcher_exec, exec_type, system_file_type, file_type;
 
 init_daemon_domain(modem-switcher)
 
+typeattribute modem-switcher system_executes_vendor_violators;
 typeattribute modem-switcher system_writes_vendor_properties_violators;
 
 # Allow access to the HALs
@@ -28,6 +29,9 @@ allow modem-switcher hidl_memory_hwservice:hwservice_manager find;
 
 # Allow modem-switcher to read files in /oem
 r_dir_file(modem-switcher, oemfs)
+
+# Allow modem-switcher to read files in /vendor/oem
+r_dir_file(modem-switcher, vendor_oem_file)
 
 # Allow modem-switcher to get cust_system_prop
 get_prop(modem-switcher, cust_system_prop)
