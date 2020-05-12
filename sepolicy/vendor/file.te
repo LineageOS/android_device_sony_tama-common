@@ -1,3 +1,6 @@
+# Audio
+type audio_hweffect_device, file_type;
+
 # Camera
 type sysfs_camera, fs_type, sysfs_type;
 
