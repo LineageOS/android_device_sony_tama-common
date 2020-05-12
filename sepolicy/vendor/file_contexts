@@ -19,6 +19,10 @@
 /dev/sony_camera0		u:object_r:sony_camera_device:s0
 /dev/sony_camera1		u:object_r:sony_camera_device:s0
 
+# SoMC camera sockets
+/dev/socket/cammw_excal:ipc:9000		u:object_r:hal_camera_somc_socket:s0
+/dev/socket/cammw_excal:ipc:9001		u:object_r:hal_camera_somc_socket:s0
+
 # Vendor
 /(vendor|system/vendor)/bin/wait4tad				u:object_r:tad_exec:s0
 
