@@ -1,3 +1,6 @@
+# Audio effects
+/dev/sony_hweffect_params		u:object_r:audio_hweffect_device:s0
+
 # Dev
 /dev/socket/tad                                                 u:object_r:tad_socket:s0
 
