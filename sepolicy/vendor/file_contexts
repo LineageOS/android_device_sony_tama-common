@@ -15,6 +15,10 @@
 # PERSIST
 /mnt/vendor/persist/wlan(/.*)?                                  u:object_r:persist_wlan_file:s0
 
+# Sony camera devices
+/dev/sony_camera0		u:object_r:sony_camera_device:s0
+/dev/sony_camera1		u:object_r:sony_camera_device:s0
+
 # Vendor
 /(vendor|system/vendor)/bin/wait4tad				u:object_r:tad_exec:s0
 

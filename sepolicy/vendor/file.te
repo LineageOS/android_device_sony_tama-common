@@ -2,6 +2,7 @@
 type audio_hweffect_device, file_type;
 
 # Camera
+type sony_camera_device, file_type;
 type sysfs_camera, fs_type, sysfs_type;
 
 # Data
