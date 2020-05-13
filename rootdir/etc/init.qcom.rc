@@ -462,9 +462,6 @@ on post-fs-data
     # Create folder of camera
     mkdir /data/vendor/camera 0770 camera camera
 
-    # Create directory for illumination_service
-    mkdir /data/vendor/illumination_service 0770 system system
-
     # Create directory for tftp
     mkdir /data/vendor/tombstones 0771 system system
     mkdir /data/vendor/tombstones/rfs 0771 system system
@@ -1669,13 +1666,6 @@ service iddd /vendor/bin/iddd
     user oem_2987
     group oem_2987 log inet oem_2993
     writepid /dev/cpuset/system-background/tasks
-
-service illumination /vendor/bin/hw/illumination_service
-    socket illumination stream 0660 system oem_2929
-    class hal
-    user root
-    writepid /dev/cpuset/system-background/tasks
-    shutdown critical
 
 # SONY: TrimArea Daemon
 # Last 2 args: start block(blk size 128k), number of blocks(partitionsize(kb)/128(kb))
