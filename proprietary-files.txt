@@ -477,15 +477,6 @@ vendor/lib64/vendor.semc.system.idd@1.0.so
 vendor/lib/libidd.so
 vendor/lib/vendor.semc.system.idd@1.0.so
 
-# Illumination service
-vendor/bin/hw/illumination_service
-vendor/lib64/hw/lights.default.so
-vendor/lib64/liblights-core.so
-vendor/lib64/libsys-utils.so
-vendor/lib/hw/lights.default.so
-vendor/lib/liblights-core.so
-vendor/lib/libsys-utils.so
-
 # IMS
 -product/app/uceShimService/uceShimService.apk
 product/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml
@@ -667,6 +658,10 @@ vendor/lib/libmulawdec.so
 vendor/lib/libsmwrapper.so
 
 # Light
+vendor/lib64/liblights-core.so
+vendor/lib64/libsys-utils.so
+vendor/lib/liblights-core.so
+vendor/lib/libsys-utils.so
 vendor/lib/vendor.semc.hardware.light@1.0.so
 vendor/lib64/vendor.semc.hardware.light@1.0.so
 
