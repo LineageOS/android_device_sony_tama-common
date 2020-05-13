@@ -1224,12 +1224,10 @@ system/etc/init/wfdservice.rc
 -system/framework/WfdCommon.jar
 system/lib64/libmmrtpdecoder.so
 system/lib64/libmmrtpencoder.so
-system/lib64/libwfdclient.so
 system/lib64/libwfdcommonutils.so
 system/lib64/libwfdconfigutils.so
 system/lib64/libwfdmminterface.so
 system/lib64/libwfdmmsink.so
-system/lib64/libwfdnative.so
 system/lib64/libwfdrtsp.so
 system/lib64/libwfdsinksm.so
 system/lib64/libwfdsm.so
@@ -1243,7 +1241,6 @@ system/lib/libmmrtpdecoder.so
 system/lib/libmmrtpencoder.so
 system/lib/libwfdaac.so
 system/lib/libwfdavenhancements.so
-system/lib/libwfdclient.so
 system/lib/libwfdcommonutils.so
 system/lib/libwfdconfigutils.so
 system/lib/libwfdmminterface.so
@@ -1258,7 +1255,6 @@ system/lib/libwfduibcsinkinterface.so
 system/lib/libwfduibcsink.so
 system/lib/libwfduibcsrcinterface.so
 system/lib/libwfduibcsrc.so
--system/priv-app/WfdService/WfdService.apk
 vendor/bin/wifidisplayhalservice
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
 vendor/etc/wfdconfig.xml
@@ -1287,3 +1283,8 @@ vendor/lib/libwfduibcsrcinterface_proprietary.so
 vendor/lib/libwfduibcsrc_proprietary.so
 vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
 vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
+
+# Wifi Display (WfdService) - from mata - QP1A.190711.148
+system/lib64/libwfdclient.so|e6954d14a794d457325c2cf9a5daa0392a4c34ec
+system/lib64/libwfdnative.so|aeb793285dd721611039d5f3ffbe9b85c79b1da4
+-system/priv-app/WfdService/WfdService.apk|dc8ba0adf8c1d5327d82dbae832523f486e61a69
