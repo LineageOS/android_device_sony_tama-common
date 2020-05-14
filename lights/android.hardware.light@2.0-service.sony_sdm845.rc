@@ -1,10 +1,31 @@
 on boot
-    chown system system /sys/class/leds/red/start_idx
-    chown system system /sys/class/leds/green/start_idx
-    chown system system /sys/class/leds/blue/start_idx
+    # RGB leds
+    chown system system /sys/class/leds/red/blink
+    chown system system /sys/class/leds/red/brightness
+    chown system system /sys/class/leds/red/duty_pcts
     chown system system /sys/class/leds/red/lut_flags
+    chown system system /sys/class/leds/red/pause_hi
+    chown system system /sys/class/leds/red/pause_lo
+    chown system system /sys/class/leds/red/ramp_step_ms
+    chown system system /sys/class/leds/red/start_idx
+
+    chown system system /sys/class/leds/green/blink
+    chown system system /sys/class/leds/green/brightness
+    chown system system /sys/class/leds/green/duty_pcts
     chown system system /sys/class/leds/green/lut_flags
+    chown system system /sys/class/leds/green/pause_hi
+    chown system system /sys/class/leds/green/pause_lo
+    chown system system /sys/class/leds/green/ramp_step_ms
+    chown system system /sys/class/leds/green/start_idx
+
+    chown system system /sys/class/leds/blue/blink
+    chown system system /sys/class/leds/blue/brightness
+    chown system system /sys/class/leds/blue/duty_pcts
     chown system system /sys/class/leds/blue/lut_flags
+    chown system system /sys/class/leds/blue/pause_hi
+    chown system system /sys/class/leds/blue/pause_lo
+    chown system system /sys/class/leds/blue/ramp_step_ms
+    chown system system /sys/class/leds/blue/start_idx
 
 service vendor.light-hal-2-0 /vendor/bin/hw/android.hardware.light@2.0-service.sony_sdm845
     interface android.hardware.light@2.0::ILight default
