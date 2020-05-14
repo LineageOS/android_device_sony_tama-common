@@ -122,31 +122,6 @@ on post-fs
     chown system system /sys/class/leds/wled/bl_scale
     chown system system /sys/class/leds/wled/en_cabc
 
-    # led RGB
-    chown system system /sys/class/leds/rgb/sync_state
-    chown system system /sys/class/leds/rgb/start_blink
-    chown system system /sys/class/leds/red/brightness
-    chown system system /sys/class/leds/red/lut_pwm
-    chown system system /sys/class/leds/red/step_duration
-    chown system system /sys/class/leds/red/pause_lo_multi
-    chown system system /sys/class/leds/red/pause_hi_multi
-    chown system system /sys/class/leds/red/max_single_brightness
-    chown system system /sys/class/leds/red/max_mix_brightness
-    chown system system /sys/class/leds/green/brightness
-    chown system system /sys/class/leds/green/lut_pwm
-    chown system system /sys/class/leds/green/step_duration
-    chown system system /sys/class/leds/green/pause_lo_multi
-    chown system system /sys/class/leds/green/pause_hi_multi
-    chown system system /sys/class/leds/green/max_single_brightness
-    chown system system /sys/class/leds/green/max_mix_brightness
-    chown system system /sys/class/leds/blue/brightness
-    chown system system /sys/class/leds/blue/lut_pwm
-    chown system system /sys/class/leds/blue/step_duration
-    chown system system /sys/class/leds/blue/pause_lo_multi
-    chown system system /sys/class/leds/blue/pause_hi_multi
-    chown system system /sys/class/leds/blue/max_single_brightness
-    chown system system /sys/class/leds/blue/max_mix_brightness
-
     # System setting access from white balance app into fb.
     chown system graphics /dev/graphics/fb0
     chown system graphics /dev/graphics/fb1
