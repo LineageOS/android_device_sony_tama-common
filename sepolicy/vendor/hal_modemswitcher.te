@@ -1,0 +1,6 @@
+# HwBinder IPC from client to server, and callbacks
+binder_call(hal_modemswitcher_client, hal_modemswitcher_server)
+binder_call(hal_modemswitcher_server, hal_modemswitcher_client)
+
+add_hwservice(hal_modemswitcher_server, hal_modemswitcher_hwservice)
+allow hal_modemswitcher_client hal_modemswitcher_hwservice:hwservice_manager find;

@@ -7,6 +7,10 @@ attribute hal_miscta;
 attribute hal_miscta_client;
 attribute hal_miscta_server;
 
+attribute hal_modemswitcher;
+attribute hal_modemswitcher_client;
+attribute hal_modemswitcher_server;
+
 attribute hal_secd;
 attribute hal_secd_client;
 attribute hal_secd_server;
