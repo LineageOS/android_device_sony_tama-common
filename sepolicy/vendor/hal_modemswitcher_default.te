@@ -1,0 +1,20 @@
+type hal_modemswitcher_default, domain;
+hal_server_domain(hal_modemswitcher_default, hal_modemswitcher)
+
+type hal_modemswitcher_default_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(hal_modemswitcher_default)
+
+# Allow hal_modemswitcher_default to create its sockets
+allow hal_modemswitcher_default hal_modemswitcher_default:socket create_socket_perms;
+allow hal_modemswitcher_default self:qipcrtr_socket create_socket_perms;
+allow hal_modemswitcher_default self:socket create_socket_perms;
+allowxperm hal_modemswitcher_default self:qipcrtr_socket ioctl msm_sock_ipc_ioctls;
+allowxperm hal_modemswitcher_default self:socket ioctl msm_sock_ipc_ioctls;
+
+# Allow hal_modemswitcher_default to read files in /firmware
+allow hal_modemswitcher_default firmware_file:dir r_dir_perms;
+allow hal_modemswitcher_default firmware_file:file r_file_perms;
+allow hal_modemswitcher_default firmware_file:lnk_file r_file_perms;
+
+# Allow hal_modemswitcher_default to get vendor_radio_prop
+get_prop(hal_modemswitcher_default, vendor_radio_prop)
