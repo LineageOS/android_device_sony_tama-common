@@ -1,10 +1,7 @@
-type modem-switcher, domain, coredomain;
-type modem-switcher_exec, exec_type, system_file_type, file_type;
+type modem-switcher, domain;
+type modem-switcher_exec, exec_type, vendor_file_type, file_type;
 
 init_daemon_domain(modem-switcher)
-
-typeattribute modem-switcher system_executes_vendor_violators;
-typeattribute modem-switcher system_writes_vendor_properties_violators;
 
 # Allow access to the HALs
 hal_client_domain(modem-switcher, hal_allocator)
@@ -30,8 +27,8 @@ allow modem-switcher hidl_memory_hwservice:hwservice_manager find;
 # Allow modem-switcher to read files in /oem
 r_dir_file(modem-switcher, oemfs)
 
-# Allow modem-switcher to read files in /vendor/oem
-r_dir_file(modem-switcher, vendor_oem_file)
+# Allow modem-switcher to read files in /vendor
+r_dir_file(modem-switcher, vendor_file)
 
 # Allow modem-switcher to get cust_system_prop
 get_prop(modem-switcher, cust_system_prop)
@@ -41,6 +38,9 @@ get_prop(modem-switcher, cust_debug_system_prop)
 
 # Allow modem-switcher to get hwservicemanager_prop
 get_prop(modem-switcher, hwservicemanager_prop)
+
+# Allow modem-switcher to get vendor_radio_prop
+get_prop(modem-switcher, vendor_radio_prop)
 
 # Allow modem-switcher to set sony_modemswitcher_prop
 set_prop(modem-switcher, sony_modemswitcher_prop)
