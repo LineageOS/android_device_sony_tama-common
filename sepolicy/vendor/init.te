@@ -1,6 +1,3 @@
-# Allow init to mount on idd_rca_dir, idd_root_dir, oemfs, qns_file
-allow init { idd_rca_dir idd_root_dir oemfs qns_file }:dir mounton;
-
 # Allow init to read files in /lta-label
 r_dir_file(init, lta_label)
 

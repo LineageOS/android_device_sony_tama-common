@@ -51,4 +51,3 @@ type qns_data_file, file_type;
 
 # Socket
 type tad_socket, file_type;
-type vendor_oem_file, file_type, vendor_file_type;
