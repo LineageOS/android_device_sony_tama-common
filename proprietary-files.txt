@@ -738,10 +738,9 @@ vendor/etc/init/vendor.somc.hardware.miscta@1.0-service.rc
 vendor/lib64/vendor.somc.hardware.miscta@1.0.so
 
 # Modem switcher
-bin/sony-modem-switcher
-etc/init/init.sony-modem-switcher.rc
-lib64/libMiscTaWrapper.so
-lib64/vendor.somc.hardware.modemswitcher@1.0.so
+bin/sony-modem-switcher:vendor/bin/sony-modem-switcher
+etc/init/init.sony-modem-switcher.rc:vendor/etc/init/init.sony-modem-switcher.rc
+lib64/libMiscTaWrapper.so:vendor/lib64/libMiscTaWrapper.so
 vendor/bin/hw/vendor.somc.hardware.modemswitcher@1.0-service
 vendor/etc/init/vendor.somc.hardware.modemswitcher@1.0-service.rc
 vendor/lib64/vendor.somc.hardware.modemswitcher@1.0.so
