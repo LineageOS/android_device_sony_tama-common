@@ -34,9 +34,6 @@
 /mnt/idd/socket/idd_co_stream             u:object_r:idd_socket:s0
 /mnt/idd/startup-prober(/.*)?             u:object_r:startupprober_file:s0
 
-# OEM subdirectory
-/vendor/oem(/.*)?                             u:object_r:vendor_oem_file:s0
-
 # NFC
 /dev/pn553                u:object_r:nfc_device:s0
 
@@ -62,13 +59,13 @@
 /(vendor|system/vendor)/bin/init\.qcom\.msim\.sh        u:object_r:init-qcom-msim-sh_exec:s0
 
 # Vendor executables
-/system/bin/sony-modem-switcher                    u:object_r:modem-switcher_exec:s0
 /(vendor|system/vendor)/bin/hw/kobjeventd		u:object_r:kobjeventd_exec:s0
 /(vendor|system/vendor)/bin/iddd		        u:object_r:idd_exec:s0
 /(vendor|system/vendor)/bin/keyprovd		        u:object_r:keyprovd_exec:s0
 /(vendor|system/vendor)/bin/mlog_qmi_service            u:object_r:mlog_qmi_service_exec:s0
 /(vendor|system/vendor)/bin/sct_service			u:object_r:sct_service_exec:s0
 /(vendor|system/vendor)/bin/sensor_json_transfer.sh	u:object_r:qti_init_shell_exec:s0
+/(vendor|system/vendor)/bin/sony-modem-switcher    u:object_r:modem-switcher_exec:s0
 /(vendor|system/vendor)/bin/tad  			u:object_r:tad_exec:s0
 /(vendor|system/vendor)/bin/taimport_vendor             u:object_r:taimport_vendor_exec:s0
 /(vendor|system/vendor)/bin/ta_qmi_service	        u:object_r:ta_qmi_service_exec:s0

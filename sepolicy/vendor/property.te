@@ -2,7 +2,7 @@ type vendor_semc_version_cust_active_prop, property_type;
 type vendor_bt_a2dp_prop, property_type;
 type vendor_dpm_feature_prop, property_type;
 type cust_debug_system_prop, property_type;
-type cust_system_prop, property_type, extended_core_property_type;
+type cust_system_prop, property_type;
 type demo_prop, property_type;
 type ril_subscription_prop, property_type;
 type soundtrigger_prop, property_type;
