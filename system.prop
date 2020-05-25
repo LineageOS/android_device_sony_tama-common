@@ -33,3 +33,7 @@ ro.nfc.port=I2C
 
 # QC framework value-adds
 ro.vendor.qti.va_aosp.support=1
+
+# Wireless display
+persist.debug.wfd.enable=1
+persist.sys.wfd.virtual=0
