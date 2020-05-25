@@ -1,3 +1,5 @@
+# Sony package version: 52.1.A.2.1
+
 # ADSP
 vendor/bin/adsprpcd
 vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
