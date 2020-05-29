@@ -7,6 +7,10 @@ genfscon sysfs /devices/platform/soc/soc:ldo_vibrator/leds/vibrator/duration    
 genfscon sysfs /devices/platform/soc/soc:ldo_vibrator/leds/vibrator/state       u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/platform/soc/soc:ldo_vibrator/leds/vibrator/trigger     u:object_r:sysfs_leds:s0
 
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pmi8998@3:qcom,leds@d000    u:object_r:sysfs_leds:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pmi8998@3:qcom,leds@d300    u:object_r:sysfs_leds:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pmi8998@3:qcom,leds@d800    u:object_r:sysfs_leds:s0
+
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/jeita_aux_condition u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/jeita_aux_thresh_hot u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/jeita_aux_thresh_warm u:object_r:sysfs_batteryinfo:s0
