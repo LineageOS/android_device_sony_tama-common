@@ -661,18 +661,6 @@ on post-fs-data
     symlink /config/usb_gadget/g1/functions/mass_storage.0 /config/usb_gadget/g1/configs/b.1/f1
     write /config/usb_gadget/g1/UDC ${sys.usb.controller}
 
-    # chargemon
-    # Add oem_2993 to the group of chargemon for access MiscTA.
-    # Add wakelock to the group of chargemon for access "/sys/power/wake_lock" and "/sys/power/wake_unlock".
-    # Add input to the group of chargemon for access "/dev/input/event"
-    exec - system system root oem_2993 wakelock input -- /vendor/bin/chargemon
-    exec - root root -- /vendor/bin/chargemon_shutdown
-
-    # enable os_desc after chargemon
-    write /config/usb_gadget/g1/os_desc/use 1
-    rm /config/usb_gadget/g1/configs/b.1/f1
-    write /config/usb_gadget/g1/UDC ""
-
     # create directory for widevine
     mkdir /data/vendor/wv 0700 media media
 
