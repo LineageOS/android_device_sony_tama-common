@@ -22,5 +22,8 @@ type lta_label, fs_type;
 # Persist
 type persist_wlan_file, file_type;
 
+# QNS
+type qns_data_file, file_type;
+
 # Socket
 type tad_socket, file_type;
