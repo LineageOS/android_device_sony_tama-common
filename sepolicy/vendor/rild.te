@@ -1,0 +1,2 @@
+# Allow rild to find hal_secd_hwservice
+allow rild hal_secd_hwservice:hwservice_manager find;

@@ -1,0 +1,10 @@
+com.fingerprints.extension::IFingerprintAuthenticator             u:object_r:fpc_extension_service:s0
+com.fingerprints.extension::IFingerprintCalibration               u:object_r:fpc_extension_service:s0
+com.fingerprints.extension::IFingerprintEngineering               u:object_r:fpc_extension_service:s0
+com.fingerprints.extension::IFingerprintNavigation                u:object_r:fpc_extension_service:s0
+com.fingerprints.extension::IFingerprintSensorTest                u:object_r:fpc_extension_service:s0
+vendor.semc.hardware.secd::IDeviceSecurity                        u:object_r:hal_secd_hwservice:s0
+vendor.semc.hardware.thermal::ISomcThermalEngineWrapper           u:object_r:hal_somc_thermal_hwservice:s0
+vendor.semc.system.idd::IIdd                                      u:object_r:hal_idd_hwservice:s0
+vendor.somc.hardware.camera.provider::IVendorSomcCameraProvider   u:object_r:hal_somc_camera_hwservice:s0
+vendor.somc.hardware.miscta::IMisctaGlobal                        u:object_r:hal_miscta_hwservice:s0
