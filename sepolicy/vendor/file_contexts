@@ -18,6 +18,9 @@
 # PERSIST
 /mnt/vendor/persist/wlan(/.*)?                                  u:object_r:persist_wlan_file:s0
 
+# qns
+/mnt/qns(/.*)?                            u:object_r:qns_data_file:s0
+
 # Sony camera devices
 /dev/sony_camera0		u:object_r:sony_camera_device:s0
 /dev/sony_camera1		u:object_r:sony_camera_device:s0
