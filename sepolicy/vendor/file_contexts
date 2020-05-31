@@ -12,6 +12,9 @@
 /data/vendor/etc/wlan.*                                         u:object_r:wifi_vendor_data_file:s0
 /data/vendor/etc/bluetooth.*                                    u:object_r:bluetooth_vendor_data_file:s0
 
+# FPC fingerprint socket
+/dev/socket/fpc_oem		u:object_r:hal_fpc_fingerprint_socket:s0
+
 # idd
 /mnt/rca(/.*)?                            u:object_r:idd_rca_file:s0
 /mnt/idd(/.*)?                            u:object_r:idd_data_file:s0

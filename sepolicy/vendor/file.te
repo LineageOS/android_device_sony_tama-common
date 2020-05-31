@@ -10,6 +10,7 @@ type sysfs_camera, fs_type, sysfs_type;
 type bluetooth_vendor_data_file, file_type, data_file_type;
 
 # Fingerprint sensor
+type hal_fpc_fingerprint_socket, file_type;
 type sysfs_fingerprint, fs_type, sysfs_type;
 
 # idd
