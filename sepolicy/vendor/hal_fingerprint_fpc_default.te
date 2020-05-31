@@ -11,5 +11,7 @@ allow hal_fingerprint_fpc_default tee_device:chr_file ioctl;
 allow hal_fingerprint_fpc_default input_device:dir r_dir_perms;
 allow hal_fingerprint_fpc_default input_device:chr_file r_file_perms;
 
+allow hal_fingerprint_fpc_default hal_fpc_fingerprint_socket:sock_file rw_file_perms;
+
 allow hal_fingerprint_fpc_default sysfs_fingerprint:dir r_dir_perms;
 allow hal_fingerprint_fpc_default sysfs_fingerprint:file rw_file_perms;
