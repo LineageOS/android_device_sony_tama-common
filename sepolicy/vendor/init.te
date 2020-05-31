@@ -1,2 +1,5 @@
 # Allow init to read files in /lta-label
 r_dir_file(init, lta_label)
+
+# Allow init to create fpc_oem socket
+allow init hal_fpc_fingerprint_socket:sock_file create_file_perms;
