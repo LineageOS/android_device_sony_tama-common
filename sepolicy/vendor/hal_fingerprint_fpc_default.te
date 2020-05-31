@@ -4,6 +4,9 @@ hal_server_domain(hal_fingerprint_fpc_default, hal_fingerprint_fpc)
 type hal_fingerprint_fpc_default_exec, exec_type, vendor_file_type, file_type;
 init_daemon_domain(hal_fingerprint_fpc_default)
 
+# Allow hal_fingerprint_fpc_default to add and find fpc_extension_service
+allow hal_fingerprint_fpc_default fpc_extension_service:hwservice_manager { add find };
+
 allow hal_fingerprint_fpc_default tee_device:chr_file ioctl;
 allow hal_fingerprint_fpc_default input_device:dir r_dir_perms;
 allow hal_fingerprint_fpc_default input_device:chr_file r_file_perms;
