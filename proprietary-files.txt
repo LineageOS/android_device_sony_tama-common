@@ -152,8 +152,6 @@ vendor/lib/libsysmon_cdsp_skel.so
 vendor/lib/libmdsprpc.so
 
 # Charger
-vendor/bin/chargemon
-vendor/bin/chargemon_shutdown
 vendor/bin/hvdcp_opti
 
 # CNE
