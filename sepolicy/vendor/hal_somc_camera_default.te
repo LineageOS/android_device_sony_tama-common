@@ -5,3 +5,6 @@ hal_server_domain(hal_somc_camera_default, hal_somc_camera)
 
 type hal_somc_camera_default_exec, exec_type, vendor_file_type, file_type;
 init_daemon_domain(hal_somc_camera_default)
+
+# Allow hal_somc_camera_default to add and find hal_somc_camera_hwservice
+allow hal_somc_camera_default hal_somc_camera_hwservice:hwservice_manager { find add };
