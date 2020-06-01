@@ -8,3 +8,7 @@ init_daemon_domain(hal_somc_camera_default)
 
 # Allow hal_somc_camera_default to add and find hal_somc_camera_hwservice
 allow hal_somc_camera_default hal_somc_camera_hwservice:hwservice_manager { find add };
+
+allow hal_somc_camera_default sysfs_camera:file rw_file_perms;
+allow hal_somc_camera_default vendor_camera_data_file:dir w_dir_perms;
+allow hal_somc_camera_default vendor_camera_data_file:file create_file_perms;
