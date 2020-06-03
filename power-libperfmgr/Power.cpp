@@ -265,38 +265,6 @@ static int get_master_low_power_stats(hidl_vec<PowerStateSubsystem> *subsystems)
     return 0;
 }
 
-static int get_wlan_low_power_stats(struct PowerStateSubsystem *subsystem) {
-    uint64_t stats[WLAN_STATS_COUNT] = {0};
-    struct PowerStateSubsystemSleepState *state;
-
-    subsystem->name = "wlan";
-
-    if (extract_wlan_stats(stats, ARRAY_SIZE(stats)) != 0) {
-        subsystem->states.resize(0);
-        return -1;
-    }
-
-    subsystem->states.resize(WLAN_SLEEP_STATE_COUNT);
-
-    /* Update statistics for Active State */
-    state = &subsystem->states[WLAN_STATE_ACTIVE];
-    state->name = "Active";
-    state->residencyInMsecSinceBoot = stats[CUMULATIVE_TOTAL_ON_TIME_MS];
-    state->totalTransitions = stats[DEEP_SLEEP_ENTER_COUNTER];
-    state->lastEntryTimestampMs = 0; //FIXME need a new value from Qcom
-    state->supportedOnlyInSuspend = false;
-
-    /* Update statistics for Deep-Sleep state */
-    state = &subsystem->states[WLAN_STATE_DEEP_SLEEP];
-    state->name = "Deep-Sleep";
-    state->residencyInMsecSinceBoot = stats[CUMULATIVE_SLEEP_TIME_MS];
-    state->totalTransitions = stats[DEEP_SLEEP_ENTER_COUNTER];
-    state->lastEntryTimestampMs = stats[LAST_DEEP_SLEEP_ENTER_TSTAMP_MS];
-    state->supportedOnlyInSuspend = false;
-
-    return 0;
-}
-
 // Methods from ::android::hardware::power::V1_1::IPower follow.
 Return<void> Power::getSubsystemLowPowerStats(getSubsystemLowPowerStats_cb _hidl_cb) {
     hidl_vec<PowerStateSubsystem> subsystems;
@@ -306,11 +274,6 @@ Return<void> Power::getSubsystemLowPowerStats(getSubsystemLowPowerStats_cb _hidl
     // Get low power stats for all of the system masters.
     if (get_master_low_power_stats(&subsystems) != 0) {
         ALOGE("%s: failed to process master stats", __func__);
-    }
-
-    // Get WLAN subsystem low power stats.
-    if (get_wlan_low_power_stats(&subsystems[SUBSYSTEM_WLAN]) != 0) {
-        ALOGE("%s: failed to process wlan stats", __func__);
     }
 
     _hidl_cb(subsystems, Status::SUCCESS);
