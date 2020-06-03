@@ -47,10 +47,6 @@
 #define MASTER_STATS_FILE "/sys/power/rpmh_stats/master_stats"
 #endif
 
-#ifndef WLAN_STATS_FILE
-#define WLAN_STATS_FILE "/d/wlan0/power_stats"
-#endif
-
 #ifndef SYSTEM_STATS_FILE
 #define SYSTEM_STATS_FILE "/sys/power/system_sleep/stats"
 #endif
@@ -72,17 +68,6 @@ struct stats_section master_sections[MASTER_COUNT] = {
     //{ MASTER_CDSP,       "CDSP", master_stats_labels, ARRAY_SIZE(master_stats_labels) },
     //{ MASTER_GPU,         "GPU", master_stats_labels, ARRAY_SIZE(master_stats_labels) },
     //{ MASTER_DISPLAY, "DISPLAY", master_stats_labels, ARRAY_SIZE(master_stats_labels) },
-};
-
-const char *wlan_stats_labels[WLAN_STATS_COUNT] = {
-    "cumulative_sleep_time_ms",
-    "cumulative_total_on_time_ms",
-    "deep_sleep_enter_counter",
-    "last_deep_sleep_enter_tstamp_ms"
-};
-
-struct stats_section wlan_sections[] = {
-    { SUBSYSTEM_WLAN, "POWER DEBUG STATS", wlan_stats_labels, ARRAY_SIZE(wlan_stats_labels) },
 };
 
 const char *system_stats_labels[SYSTEM_STATE_STATS_COUNT] = {
@@ -203,16 +188,6 @@ int extract_master_stats(uint64_t *list, size_t list_length) {
 
     return extract_stats(list, entries_per_section, MASTER_STATS_FILE,
             master_sections, ARRAY_SIZE(master_sections));
-}
-
-int extract_wlan_stats(uint64_t *list, size_t list_length) {
-    size_t entries_per_section = list_length / ARRAY_SIZE(wlan_sections);
-    if (list_length % entries_per_section != 0) {
-        ALOGW("%s: stats list size not an even multiple of section count", __func__);
-    }
-
-    return extract_stats(list, entries_per_section, WLAN_STATS_FILE,
-            wlan_sections, ARRAY_SIZE(wlan_sections));
 }
 
 int extract_system_stats(uint64_t *list, size_t list_length) {
