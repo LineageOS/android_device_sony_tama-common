@@ -4,6 +4,8 @@ hal_server_domain(hal_fingerprint_fpc_default, hal_fingerprint_fpc)
 type hal_fingerprint_fpc_default_exec, exec_type, vendor_file_type, file_type;
 init_daemon_domain(hal_fingerprint_fpc_default)
 
+binder_call(hal_fingerprint_fpc_default, hal_idd_default)
+
 # Allow hal_fingerprint_fpc_default to add and find fpc_extension_service
 allow hal_fingerprint_fpc_default fpc_extension_service:hwservice_manager { add find };
 
