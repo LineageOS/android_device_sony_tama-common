@@ -233,16 +233,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <fqname>@1.2::INfc/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.oemlock</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IOemLock</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IOemLock/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.radio</name>
         <transport>hwbinder</transport>
         <fqname>@1.2::ISap/slot1</fqname>
