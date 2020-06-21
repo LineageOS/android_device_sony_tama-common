@@ -26,7 +26,10 @@
 /mnt/idd/lost\+found(/.*)?                u:object_r:idd_lostfound_file:s0
 /mnt/idd/output(/.*)?                     u:object_r:idd_output_file:s0
 /mnt/idd/private(/.*)?                    u:object_r:idd_private_file:s0
-/mnt/idd/socket(/.*)?                     u:object_r:idd_socket_file:s0
+/mnt/idd/socket(/.*)?                     u:object_r:idd_socket:s0
+/mnt/idd/socket/idd_cl                    u:object_r:idd_socket:s0
+/mnt/idd/socket/idd_co                    u:object_r:idd_socket:s0
+/mnt/idd/socket/idd_co_stream             u:object_r:idd_socket:s0
 /mnt/idd/startup-prober(/.*)?             u:object_r:startupprober_file:s0
 
 # PERSIST

@@ -23,7 +23,7 @@ type idd_private_file, file_type;
 type idd_rca_dir, file_type;
 type idd_rca_file, file_type;
 type idd_root_dir, file_type;
-type idd_socket_file, file_type;
+type idd_socket, file_type;
 type startupprober_file, file_type;
 
 # LTALabel
