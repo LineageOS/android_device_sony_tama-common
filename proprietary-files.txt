@@ -135,6 +135,27 @@ vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so
 product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 product/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 
+# Cacao
+bin/cacaoserver
+lib64/libcacao_client.so
+lib64/libcacao_pal.so
+lib64/libcacao_process_ctrl_gateway.so
+lib64/libcacao_service.so
+lib64/vendor.somc.hardware.camera.cacao@1.0.so
+lib64/vendor.somc.hardware.camera.cacao@2.0.so
+lib64/vendor.somc.hardware.camera.cacao@3.0.so
+lib64/vendor.somc.hardware.camera.cacao@3.1.so
+lib64/vendor.somc.hardware.camera.cacao@3.2.so
+lib/libcacao_client.so
+lib/libcacao_pal.so
+lib/libcacao_process_ctrl_gateway.so
+lib/libcacao_service.so
+lib/vendor.somc.hardware.camera.cacao@1.0.so
+lib/vendor.somc.hardware.camera.cacao@2.0.so
+lib/vendor.somc.hardware.camera.cacao@3.0.so
+lib/vendor.somc.hardware.camera.cacao@3.1.so
+lib/vendor.somc.hardware.camera.cacao@3.2.so
+
 # CDSP
 vendor/bin/cdsprpcd
 vendor/lib64/libcdsp_default_listener.so

@@ -1760,3 +1760,11 @@ service kobjeventd /vendor/bin/hw/kobjeventd
     user system
     group system
     class main
+
+# Cacao service
+service cacaoserver /system/bin/cacaoserver
+    class main
+    user cameraserver
+    group audio camera input drmrpc
+    ioprio rt 4
+    writepid /dev/cpuset/camera-daemon/tasks /dev/stune/top-app/tasks
