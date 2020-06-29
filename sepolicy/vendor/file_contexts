@@ -50,6 +50,7 @@
 /(vendor|system/vendor)/bin/init\.qcom\.msim\.sh        u:object_r:init-qcom-msim-sh_exec:s0
 
 # Vendor executables
+/system/bin/cacaoserver		                        u:object_r:cacaoserver_exec:s0
 /(vendor|system/vendor)/bin/hw/iddd		        u:object_r:idd_exec:s0
 /(vendor|system/vendor)/bin/hw/idd-logreader		u:object_r:idd_exec:s0
 /(vendor|system/vendor)/bin/hw/kobjeventd		u:object_r:kobjeventd_exec:s0
