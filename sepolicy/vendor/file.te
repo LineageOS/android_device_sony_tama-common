@@ -30,6 +30,7 @@ type startupprober_file, file_type;
 type lta_label, fs_type;
 
 # Persist
+type persist_credmgr_file, file_type;
 type persist_wlan_file, file_type;
 
 # QNS

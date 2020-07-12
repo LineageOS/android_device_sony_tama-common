@@ -107,6 +107,8 @@ on fs
     # Set SD card clock gating delay to 1ms
     write /sys/devices/platform/soc/8804000.sdhci/mmc_host/mmc0/clkgate_delay 1
 
+    restorecon /dev/block/platform/soc/1d84000.ufshc/by-name/TA
+
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
 
@@ -255,9 +257,6 @@ on boot
     setprop wifi.interface wlan0
 
     setprop ro.telephony.call_ring.multiple false
-
-    #enable camera read sensors data
-    setprop persist.camera.gyro.disable 0
 
     # Remove SUID bit for iproute2 ip tool
     chmod 0755 /system/bin/ip
@@ -1544,10 +1543,6 @@ service bugreport /system/bin/dumpstate -d -p -B -z -o /data/user_de/0/com.andro
 #Set GPU Opengles version
 on property:vendor.opengles.version=*
     setprop ro.opengles.version ${vendor.opengles.version}
-
-#Set gpu available frequencies property
-on property:vendor.gpu.available_frequencies=*
-    setprop ro.vendor.gpu.available_frequencies ${vendor.gpu.available_frequencies}
 
 service vendor.audio-hal-2-0 /vendor/bin/hw/android.hardware.audio@2.0-service
     override

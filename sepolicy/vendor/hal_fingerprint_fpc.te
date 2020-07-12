@@ -1,6 +1,0 @@
-# HwBinder IPC from client to server, and callbacks
-binder_call(hal_fingerprint_fpc_client, hal_fingerprint_fpc_server)
-binder_call(hal_fingerprint_fpc_server, hal_fingerprint_fpc_client)
-
-add_hwservice(hal_fingerprint_fpc_server, hal_fingerprint_fpc_hwservice)
-allow hal_fingerprint_fpc_client hal_fingerprint_fpc_hwservice:hwservice_manager find;
