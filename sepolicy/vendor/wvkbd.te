@@ -2,3 +2,6 @@ type wvkbd, domain;
 type wvkbd_exec, exec_type, vendor_file_type, file_type;
 
 init_daemon_domain(wvkbd)
+
+get_prop(wvkbd, hwservicemanager_prop)
+get_prop(wvkbd, vendor_tee_listener_prop)
