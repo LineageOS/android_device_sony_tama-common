@@ -3,3 +3,5 @@ allow rild hal_secd_hwservice:hwservice_manager find;
 
 # Allow rild to add hal_somc_radio_hwservice
 add_hwservice(rild, hal_somc_radio_hwservice)
+
+binder_call(rild, hal_secd_default)

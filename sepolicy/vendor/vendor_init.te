@@ -1,6 +1,14 @@
 # Allow vendor_init to set some props
-set_prop(vendor_init, vendor_bt_a2dp_prop)
-set_prop(vendor_init, vendor_dpm_feature_prop)
 set_prop(vendor_init, demo_prop)
 set_prop(vendor_init, ril_subscription_prop)
+set_prop(vendor_init, soundtrigger_prop)
+set_prop(vendor_init, vendor_bt_a2dp_prop)
 set_prop(vendor_init, vendor_camera_sensor_prop)
+set_prop(vendor_init, vendor_dpm_feature_prop)
+
+allow vendor_init sony_camera_device:chr_file setattr;
+
+# Allow init to run restorecon on the TA block device
+allow vendor_init block_device:lnk_file relabelfrom;
+allow vendor_init tad_block_device:blk_file setattr;
+allow vendor_init tad_block_device:lnk_file relabelto;
