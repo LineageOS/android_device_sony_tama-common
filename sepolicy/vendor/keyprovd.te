@@ -2,3 +2,5 @@ type keyprovd, domain;
 type keyprovd_exec, exec_type, vendor_file_type, file_type;
 
 init_daemon_domain(keyprovd)
+
+get_prop(keyprovd, suntory_prop)

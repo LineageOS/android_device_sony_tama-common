@@ -10,3 +10,6 @@ allow hal_nfc_default hal_nxpnfc_hwservice:hwservice_manager { find add };
 
 # Allow hal_nfc_default to find hal_secure_element_hwservice
 allow hal_nfc_default hal_secure_element_hwservice:hwservice_manager find;
+
+# Allow hal_nfc_default to read nfc props
+get_prop(hal_nfc_default, vendor_nfc_prop)
