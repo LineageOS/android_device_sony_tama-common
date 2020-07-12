@@ -1,0 +1,8 @@
+type semc_camera_app, domain;
+	
+app_domain(semc_camera_app)
+
+allow semc_camera_app cameraserver_service:service_manager find;
+
+# Allow SEMC camera app to read and execute camera modules on the vendor partition
+allow semc_camera_app vendor_file:file rx_file_perms;
