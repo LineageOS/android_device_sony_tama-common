@@ -5,6 +5,8 @@
 /dev/block/platform/soc/1d84000\.ufshc/by-name/appslog    u:object_r:appslog_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/diag       u:object_r:diag_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/LTALabel   u:object_r:ltalabel_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/Qnovo      u:object_r:qnovo_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/TA         u:object_r:tad_block_device:s0
 
 # Dev
 /dev/socket/tad                                                 u:object_r:tad_socket:s0
@@ -32,8 +34,12 @@
 /mnt/idd/socket/idd_co_stream             u:object_r:idd_socket:s0
 /mnt/idd/startup-prober(/.*)?             u:object_r:startupprober_file:s0
 
+# NFC
+/dev/pn553                u:object_r:nfc_device:s0
+
 # PERSIST
-/mnt/vendor/persist/wlan(/.*)?                                  u:object_r:persist_wlan_file:s0
+/mnt/vendor/persist/credmgr/credmgr2.db     u:object_r:persist_credmgr_file:s0
+/mnt/vendor/persist/wlan(/.*)?              u:object_r:persist_wlan_file:s0
 
 # qns
 /mnt/qns(/.*)?                            u:object_r:qns_data_file:s0
@@ -50,23 +56,24 @@
 /(vendor|system/vendor)/bin/init\.qcom\.msim\.sh        u:object_r:init-qcom-msim-sh_exec:s0
 
 # Vendor executables
-/system/bin/cacaoserver		                        u:object_r:cacaoserver_exec:s0
-/(vendor|system/vendor)/bin/hw/iddd		        u:object_r:idd_exec:s0
-/(vendor|system/vendor)/bin/hw/idd-logreader		u:object_r:idd_exec:s0
+/(vendor|system/vendor)/bin/iddd		        u:object_r:idd_exec:s0
+/(vendor|system/vendor)/bin/idd-logreader		u:object_r:idd_exec:s0
 /(vendor|system/vendor)/bin/hw/kobjeventd		u:object_r:kobjeventd_exec:s0
 /(vendor|system/vendor)/bin/keyprovd		        u:object_r:keyprovd_exec:s0
+/(vendor|system/vendor)/bin/mlog_qmi_service            u:object_r:mlog_qmi_service_exec:s0
 /(vendor|system/vendor)/bin/sct_service			u:object_r:sct_service_exec:s0
 /(vendor|system/vendor)/bin/sensor_json_transfer.sh	u:object_r:qti_init_shell_exec:s0
+/(vendor|system/vendor)/bin/tad  			u:object_r:tad_exec:s0
 /(vendor|system/vendor)/bin/taimport_vendor             u:object_r:taimport_vendor_exec:s0
 /(vendor|system/vendor)/bin/ta_qmi_service	        u:object_r:ta_qmi_service_exec:s0
 /(vendor|system/vendor)/bin/wait4tad			u:object_r:tad_exec:s0
 
 # Vendor HALs
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.sony_sdm845       u:object_r:hal_light_default_exec:s0
-/(vendor|system/vendor)/bin/hw/fpc_fingerprint@2\.1_HIDL-service		        u:object_r:hal_fingerprint_fpc_default_exec:s0
+/(vendor|system/vendor)/bin/hw/fpc_fingerprint@2\.1_HIDL-service		        u:object_r:hal_fingerprint_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.semc\.hardware\.secd@1\.0-service		u:object_r:hal_secd_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.semc\.hardware\.thermal@(.*)?		        u:object_r:hal_somc_thermal_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.semc\.system\.idd@1\.0-service    		u:object_r:hal_idd_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.somc\.hardware\.camera\.provider@1\.0-service    u:object_r:hal_somc_camera_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.somc\.hardware\.camera\.provider@1\.0-service    u:object_r:hal_camera_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.somc\.hardware\.miscta@1\.0-service		u:object_r:hal_miscta_default_exec:s0
 
