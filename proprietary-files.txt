@@ -481,7 +481,6 @@ vendor/lib/hw/vulkan.sdm845.so
 # IDD
 vendor/bin/hw/vendor.semc.system.idd@1.0-service
 vendor/bin/iddd
-vendor/bin/idd-logreader
 vendor/etc/idd.conf
 vendor/etc/iddd.conf
 vendor/etc/init/vendor.semc.system.idd@1.0-service.rc
