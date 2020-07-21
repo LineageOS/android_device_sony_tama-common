@@ -1763,3 +1763,4 @@ service cacaoserver /system/bin/cacaoserver
     group audio camera input drmrpc
     ioprio rt 4
     writepid /dev/cpuset/camera-daemon/tasks /dev/stune/top-app/tasks
+    disabled
