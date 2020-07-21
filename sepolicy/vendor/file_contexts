@@ -57,7 +57,6 @@
 
 # Vendor executables
 /(vendor|system/vendor)/bin/iddd		        u:object_r:idd_exec:s0
-/(vendor|system/vendor)/bin/idd-logreader		u:object_r:idd_exec:s0
 /(vendor|system/vendor)/bin/hw/kobjeventd		u:object_r:kobjeventd_exec:s0
 /(vendor|system/vendor)/bin/keyprovd		        u:object_r:keyprovd_exec:s0
 /(vendor|system/vendor)/bin/mlog_qmi_service            u:object_r:mlog_qmi_service_exec:s0
