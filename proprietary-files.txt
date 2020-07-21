@@ -151,6 +151,8 @@ lib/vendor.somc.hardware.camera.cacao@2.0.so
 lib/vendor.somc.hardware.camera.cacao@3.0.so
 lib/vendor.somc.hardware.camera.cacao@3.1.so
 lib/vendor.somc.hardware.camera.cacao@3.2.so
+vendor/lib/vendor.somc.hardware.camera.device@1.0.so:lib/vendor.somc.hardware.camera.device@1.0.so
+vendor/lib/vendor.somc.hardware.camera.provider@1.0.so:lib/vendor.somc.hardware.camera.provider@1.0.so
 
 # CDSP
 vendor/bin/cdsprpcd
@@ -481,7 +483,6 @@ vendor/lib/hw/vulkan.sdm845.so
 # IDD
 vendor/bin/hw/vendor.semc.system.idd@1.0-service
 vendor/bin/iddd
-vendor/bin/idd-logreader
 vendor/etc/idd.conf
 vendor/etc/iddd.conf
 vendor/etc/init/vendor.semc.system.idd@1.0-service.rc
