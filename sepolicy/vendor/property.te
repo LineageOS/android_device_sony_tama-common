@@ -10,3 +10,4 @@ type sony_prop, property_type;
 type somc_camera_prop, property_type;
 type suntory_prop, property_type;
 type vendor_wifi_prop, property_type;
+type vendor_cover_state_prop, property_type;
