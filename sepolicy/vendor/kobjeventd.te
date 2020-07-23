@@ -12,3 +12,7 @@ allow kobjeventd sysfs_switch:{ file lnk_file } r_file_perms;
 # /sys/devices/virtual/switch/lid/state
 allow kobjeventd sysfs_switch_lid:file r_file_perms;
 
+# vendor.cover_state prop
+unix_socket_connect(kobjeventd, property, init)
+allow kobjeventd property_socket:sock_file { write };
+allow kobjeventd vendor_cover_state_prop:property_service { set };
