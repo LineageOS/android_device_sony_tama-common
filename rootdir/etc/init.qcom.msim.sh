@@ -17,10 +17,6 @@ done
 
 if [[ "${MSIM_DEVICE}" -eq 1 ]]; then
     setprop persist.vendor.radio.multisim.config dsds
-    setprop persist.radio.multisim.config dsds
-    setprop ro.telephony.default_network "22,22"
-    setprop persist.vendor.radio.block_allow_data 0
 else
-    setprop ro.telephony.default_network 22
-    setprop persist.vendor.radio.block_allow_data 1
+    setprop persist.vendor.radio.multisim.config ss
 fi
