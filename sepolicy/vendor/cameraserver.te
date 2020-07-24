@@ -1,1 +1,1 @@
-binder_call(cameraserver, hal_somc_camera_default)
+binder_call(cameraserver, hal_camera_default)
