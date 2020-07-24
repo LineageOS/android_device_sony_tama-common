@@ -1,0 +1,3 @@
+allow vendor_vppservice hal_swiqi_hwservice:hwservice_manager { add find };
+allow vendor_vppservice hal_capabilityconfigstore_qti_default:binder call;
+allow vendor_vppservice vndbinder_device:chr_file rw_file_perms;

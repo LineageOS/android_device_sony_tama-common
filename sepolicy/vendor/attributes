@@ -1,8 +1,4 @@
 # HALs
-attribute hal_fingerprint_fpc;
-attribute hal_fingerprint_fpc_client;
-attribute hal_fingerprint_fpc_server;
-
 attribute hal_idd;
 attribute hal_idd_client;
 attribute hal_idd_server;
@@ -14,10 +10,6 @@ attribute hal_miscta_server;
 attribute hal_secd;
 attribute hal_secd_client;
 attribute hal_secd_server;
-
-attribute hal_somc_camera;
-attribute hal_somc_camera_client;
-attribute hal_somc_camera_server;
 
 attribute hal_somc_thermal;
 attribute hal_somc_thermal_client;
