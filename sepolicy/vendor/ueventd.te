@@ -1,0 +1,2 @@
+allow ueventd audio_hweffect_device:chr_file { create setattr };
+allow ueventd sony_camera_device:chr_file { create setattr };

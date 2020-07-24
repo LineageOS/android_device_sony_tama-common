@@ -12,3 +12,4 @@ vendor.semc.system.idd::IIdd                                      u:object_r:hal
 vendor.somc.hardware.camera.provider::IVendorSomcCameraProvider   u:object_r:hal_somc_camera_hwservice:s0
 vendor.somc.hardware.miscta::IMisctaGlobal                        u:object_r:hal_miscta_hwservice:s0
 vendor.somc.hardware.radio::ISomcHook                             u:object_r:hal_somc_radio_hwservice:s0
+vendor.somc.hardware.swiqi::IHidlSwiqi                            u:object_r:hal_swiqi_hwservice:s0
