@@ -9,7 +9,13 @@ allow hal_secd_default tee_device:chr_file rw_file_perms;
 
 # Allow hal_secd_default to read, write and create files in mnt_vendor_file
 allow hal_secd_default mnt_vendor_file:dir rw_dir_perms;
-allow hal_secd_default mnt_vendor_file:file rw_file_perms;
+allow hal_secd_default mnt_vendor_file:file create_file_perms;
+allow hal_secd_default persist_credmgr_file:dir rw_dir_perms;
+allow hal_secd_default persist_credmgr_file:file create_file_perms;
 
 # Allow hal_secd_default to get vendor_tee_listener_prop
 get_prop(hal_secd_default, vendor_tee_listener_prop)
+
+allow hal_secd_default ion_device:chr_file r_file_perms;
+
+unix_socket_connect(hal_secd_default, tad, tad)
