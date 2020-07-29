@@ -8,3 +8,6 @@ allow init hal_fpc_fingerprint_socket:sock_file create_file_perms;
 allow init tad_socket:sock_file create_file_perms;
 
 allow init qns_data_file:dir mounton;
+
+# Allow init to chown/chmod on pseudo files in /sys
+allow init sysfs_glovemode:file { open read setattr };

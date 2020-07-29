@@ -19,6 +19,9 @@
 # FPC fingerprint socket
 /dev/socket/fpc_oem		u:object_r:hal_fpc_fingerprint_socket:s0
 
+# GloveMode
+/sys/devices/virtual/input/input[0-9]+/glove_mode		u:object_r:sysfs_glovemode:s0
+
 # idd
 /mnt/idd                                  u:object_r:idd_root_dir:s0
 /mnt/rca                                  u:object_r:idd_rca_dir:s0
@@ -79,4 +82,4 @@
 /(vendor|system/vendor)/bin/hw/vendor\.semc\.system\.idd@1\.0-service    		u:object_r:hal_idd_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.somc\.hardware\.camera\.provider@1\.0-service    u:object_r:hal_camera_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.somc\.hardware\.miscta@1\.0-service		u:object_r:hal_miscta_default_exec:s0
-
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.sony_sdm845		u:object_r:hal_lineage_touch_sony_sdm845_exec:s0

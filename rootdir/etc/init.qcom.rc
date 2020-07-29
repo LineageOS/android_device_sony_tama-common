@@ -367,19 +367,15 @@ on boot
     chmod 0600 /sys/devices/virtual/input/clearpad/cover_win_top
     restorecon /sys/devices/virtual/input/clearpad/cover_win_top
 
-    # Glove for clearpad
+    # Glove Mode
     chown system system /sys/devices/common_touch/touch/glove_mode
     chmod 0600 /sys/devices/common_touch/touch/glove_mode
-    restorecon /sys/devices/common_touch/touch/glove_mode
 
     chown system system /sys/bus/platform/devices/synaptics_tcm.0/synaptics_tcm/reflash/config_id
     chmod 0600 /sys/bus/platform/devices/synaptics_tcm.0/synaptics_tcm/reflash/config_id
     restorecon /sys/bus/platform/devices/synaptics_tcm.0/synaptics_tcm/reflash/config_id
 
     # for tcm
-    chown system system /sys/devices/common_touch/touch/glove_mode
-    chmod 0600 /sys/devices/common_touch/touch/glove_mode
-    restorecon /sys/devices/common_touch/touch/glove_mode
     chown system system /sys/devices/common_touch/touch/cover_mode
     chmod 0600 /sys/devices/common_touch/touch/cover_mode
     restorecon /sys/devices/common_touch/touch/cover_mode
