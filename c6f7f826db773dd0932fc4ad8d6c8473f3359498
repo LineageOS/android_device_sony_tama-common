@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ced1e806_429bdde3",
+        "filename": "sepolicy/private/system_server.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 16208
+      },
+      "writtenOn": "2020-07-29T22:46:06Z",
+      "side": 1,
+      "message": "why is this still necessary?",
+      "revId": "c6f7f826db773dd0932fc4ad8d6c8473f3359498",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
