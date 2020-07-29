@@ -26,7 +26,7 @@ namespace touch {
 namespace V1_0 {
 namespace implementation {
 
-const std::string kGloveModePath = "/proc/driver/glove";
+const std::string kGloveModePath = "/sys/devices/common_touch/touch/glove_mode";
 
 Return<bool> GloveMode::isEnabled() {
     std::ifstream file(kGloveModePath);

@@ -355,6 +355,10 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
     android.hardware.thermal@1.0-service \
     thermal.sdm845
+    
+# Touch HAL
+PRODUCT_PACKAGES += \
+    lineage.touch@1.0-service.sony_sdm845
 
 # Trust HAL
 PRODUCT_PACKAGES += \
