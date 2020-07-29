@@ -1,0 +1,5 @@
+# HALs
+/system/bin/hw/lineage\.touch@1\.0-service\.sony_sdm845          u:object_r:hal_lineage_touch_sony_sdm845_exec:s0
+
+# GloveMode
+/sys/devices/virtual/input/input[0-9]+/glove_mode        	   u:object_r:sysfs_glovemode:s0
