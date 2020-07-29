@@ -1,0 +1,1 @@
+type sysfs_touchscreen, sysfs_type, fs_type;
