@@ -1,0 +1,1 @@
+genfscon sysfs /devices/common_touch/touch/glove_mode        u:object_r:sysfs_touchscreen:s0
