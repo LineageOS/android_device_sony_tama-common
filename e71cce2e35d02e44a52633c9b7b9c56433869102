@@ -48,6 +48,75 @@
     },
     {
       "key": {
+        "uuid": "2c63c564_b6356b7c",
+        "filename": "sepolicy/private/file_contexts",
+        "patchSetId": 2
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2020-07-30T14:29:31Z",
+      "side": 1,
+      "message": "don\u0027t mix tab and spaces",
+      "range": {
+        "startLine": 5,
+        "startChar": 49,
+        "endLine": 5,
+        "endChar": 61
+      },
+      "revId": "e71cce2e35d02e44a52633c9b7b9c56433869102",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "634650cb_722a09f2",
+        "filename": "sepolicy/private/hal_power.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2020-07-30T14:29:31Z",
+      "side": 1,
+      "message": "hm, really?",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 50
+      },
+      "revId": "e71cce2e35d02e44a52633c9b7b9c56433869102",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a052f884_f6f4202b",
+        "filename": "sepolicy/private/system_server.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2020-07-30T14:29:31Z",
+      "side": 1,
+      "message": "also not needed, at no point will system_server ever do that.",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 55
+      },
+      "revId": "e71cce2e35d02e44a52633c9b7b9c56433869102",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "cc0541fd_0664f2af",
         "filename": "touch/GloveMode.cpp",
         "patchSetId": 2
