@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "73c4417a_3eea13ff",
+        "filename": "common.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 358,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2020-07-30T14:28:24Z",
+      "side": 1,
+      "message": "remove that,",
+      "range": {
+        "startLine": 358,
+        "startChar": 0,
+        "endLine": 358,
+        "endChar": 4
+      },
+      "revId": "e71cce2e35d02e44a52633c9b7b9c56433869102",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bd3bdfaf_b193b026",
+        "filename": "framework_manifest.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2020-07-30T14:28:24Z",
+      "side": 1,
+      "message": "you don\u0027t provide this interface, do you?",
+      "range": {
+        "startLine": 11,
+        "startChar": 18,
+        "endLine": 11,
+        "endChar": 37
+      },
+      "revId": "e71cce2e35d02e44a52633c9b7b9c56433869102",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cc0541fd_0664f2af",
+        "filename": "touch/GloveMode.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2020-07-30T14:28:24Z",
+      "side": 1,
+      "message": "maybe copy isEnabled, setEnabled impl from hardware/lineage/livedisplay/sysfs/include/livedisplay/sysfs/SimpleMode.h",
+      "range": {
+        "startLine": 31,
+        "startChar": 0,
+        "endLine": 44,
+        "endChar": 1
+      },
+      "revId": "e71cce2e35d02e44a52633c9b7b9c56433869102",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "30ba81ee_912d1662",
+        "filename": "touch/lineage.touch@1.0-service.sony_sdm845.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2020-07-30T14:28:24Z",
+      "side": 1,
+      "message": "same",
+      "range": {
+        "startLine": 3,
+        "startChar": 40,
+        "endLine": 3,
+        "endChar": 59
+      },
+      "revId": "e71cce2e35d02e44a52633c9b7b9c56433869102",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
