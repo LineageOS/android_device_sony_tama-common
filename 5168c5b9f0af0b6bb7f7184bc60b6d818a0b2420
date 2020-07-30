@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6f186ffd_3be2c5c7",
+        "filename": "sepolicy/vendor/file.te",
+        "patchSetId": 4
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2020-07-30T17:25:52Z",
+      "side": 1,
+      "message": "lowercase",
+      "range": {
+        "startLine": 17,
+        "startChar": 8,
+        "endLine": 17,
+        "endChar": 12
+      },
+      "revId": "5168c5b9f0af0b6bb7f7184bc60b6d818a0b2420",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "069fd069_86ad1ca0",
+        "filename": "sepolicy/vendor/file_contexts",
+        "patchSetId": 4
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2020-07-30T17:25:52Z",
+      "side": 1,
+      "message": "Glove mode",
+      "range": {
+        "startLine": 22,
+        "startChar": 2,
+        "endLine": 22,
+        "endChar": 11
+      },
+      "revId": "5168c5b9f0af0b6bb7f7184bc60b6d818a0b2420",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
