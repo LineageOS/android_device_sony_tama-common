@@ -88,6 +88,8 @@
         <item>Super-vivid:Super-vivid</item>
         <item>Standard:DCI-P3</item>
         <item>Professional:sRGB</item>
+        <item>SMHG_70:SDR-vivid</item>
+        <item>SMH0_70:HDR-mode</item>
         <item>hal_native_identity:Panel-native</item>
     </string-array>
 
