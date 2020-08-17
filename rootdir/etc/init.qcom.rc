@@ -76,6 +76,10 @@ on init
     chown root system /sys/fs/cgroup/memory/bg/tasks
     chmod 0660 /sys/fs/cgroup/memory/bg/tasks
 
+    # Start HW service manager early
+    start hwservicemanager
+    start hidl_memory
+
     # Load persistent dm-verity state
     verity_load_state
 
@@ -87,10 +91,6 @@ on init
     chmod 0770 /dev/block/sda1
     class_start trimarea
     start tad
-
-    # These are needed for MiscTA HIDL service
-    start hwservicemanager
-    start hidl_memory
 
     #Enable Bluetooth HFP 1.7
     setprop ro.bluetooth.hfp.ver 1.7
