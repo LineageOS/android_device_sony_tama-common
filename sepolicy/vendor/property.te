@@ -1,14 +1,14 @@
-type vendor_semc_version_cust_active_prop, property_type;
-type vendor_bt_a2dp_prop, property_type;
-type vendor_dpm_feature_prop, property_type;
-type demo_prop, property_type;
-type ril_subscription_prop, property_type;
-type soundtrigger_prop, property_type;
-type vendor_camera_sensor_prop, property_type;
-type vendor_nfc_prop, property_type;
-type sony_prop, property_type;
-type somc_camera_prop, property_type;
-type suntory_prop, property_type;
-type vendor_wifi_prop, property_type;
-type vendor_cover_state_prop, property_type;
+vendor_internal_prop(vendor_semc_version_cust_active_prop)
+vendor_internal_prop(vendor_bt_a2dp_prop)
+vendor_public_prop(vendor_dpm_feature_prop)
+vendor_internal_prop(demo_prop)
+vendor_internal_prop(ril_subscription_prop)
+vendor_internal_prop(soundtrigger_prop)
+vendor_internal_prop(vendor_camera_sensor_prop)
+vendor_internal_prop(vendor_nfc_prop)
+vendor_internal_prop(sony_prop)
+vendor_internal_prop(somc_camera_prop)
+vendor_internal_prop(suntory_prop)
+vendor_internal_prop(vendor_wifi_prop)
+vendor_internal_prop(vendor_cover_state_prop)
 vendor_internal_prop(vendor_power_prop)
