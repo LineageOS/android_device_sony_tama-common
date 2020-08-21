@@ -308,7 +308,7 @@ firmware_directories /vendor/firmware_mnt/image/
 #/dev/assd                 0660    nfc         nfc
 
 # NFC
-/dev/pn553                 0660    nfc         nfc
+/dev/pn54x                 0660    nfc         nfc
 
 # UIO devices
 /dev/uio0                 0660   system     system
