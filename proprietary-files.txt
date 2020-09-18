@@ -1129,7 +1129,7 @@ vendor/lib/libsomc_thermal.so
 vendor/lib/libthermal_engine.so
 
 # Time services
--vendor/app/TimeService/TimeService.apk;:timeservice_app_cert
+-vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
 vendor/lib64/libtime_genoff.so
 vendor/lib/libtime_genoff.so
