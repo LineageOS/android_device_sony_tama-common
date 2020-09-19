@@ -418,7 +418,7 @@ PRODUCT_PACKAGES += \
     libqdMetaData \
     libqdMetaData.system
 
-PRODUCT_BOOT_JARS += \
+#PRODUCT_BOOT_JARS += \
     WfdCommon
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
