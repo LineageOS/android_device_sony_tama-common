@@ -180,6 +180,9 @@ persist.vendor.sensors.direct_channel=false
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
+# Radio
+persist.vendor.radio.enableadvancedscan=false
+
 # USB
 vendor.usb.diag.func.name=diag
 vendor.usb.dpl.inst.name=dpl
