@@ -12,6 +12,8 @@ allow idd idd_exec:file x_file_perms;
 
 allow idd idd_data_file:dir rw_dir_perms;
 allow idd idd_data_file:file rw_file_perms;
+allow idd idd_data_file:dir create_dir_perms;
+allow idd idd_data_file:file create_file_perms;
 allow idd idd_input_file:dir rw_dir_perms;
 allow idd idd_output_file:dir rw_dir_perms;
 allow idd idd_private_file:dir create_dir_perms;
@@ -22,7 +24,7 @@ allow idd idd_rca_dir:dir rw_dir_perms;
 allow idd idd_root_dir:dir create_dir_perms;
 allow idd idd_root_dir:file create_file_perms;
 
-allow idd idd_socket:dir w_dir_perms;
+allow idd idd_socket:dir rw_dir_perms;
 allow idd idd_socket:sock_file create_file_perms;
 unix_socket_connect(idd, tad, tad)
 
