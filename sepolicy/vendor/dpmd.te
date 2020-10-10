@@ -1,1 +1,1 @@
-get_prop(dpmd, vendor_dpm_feature_prop)
+get_prop(vendor_dpmd, vendor_dpm_feature_prop)
