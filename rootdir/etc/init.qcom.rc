@@ -76,9 +76,6 @@ on init
     chown root system /sys/fs/cgroup/memory/bg/tasks
     chmod 0660 /sys/fs/cgroup/memory/bg/tasks
 
-    # Load persistent dm-verity state
-    verity_load_state
-
     # SONY: Start the TrimArea Daemon. It must be started before fota-ua
     wait /dev/block/platform/soc/1d84000.ufshc
     symlink /dev/block/platform/soc/1d84000.ufshc /dev/block/bootdevice
@@ -588,9 +585,9 @@ on post-fs-data
     mkdir /mnt/idd/socket 0711 oem_2987 oem_2987
     mkdir /mnt/idd/startup-prober 0700 root root
     
-    restorecon_recursive --force /mnt/idd
+    restorecon_recursive /mnt/idd
     mkdir /mnt/rca/plugins 0750 oem_2987 oem_2987
-    restorecon_recursive --force /mnt/rca
+    restorecon_recursive /mnt/rca
 
     # Charger
     # power_supply sysfs
