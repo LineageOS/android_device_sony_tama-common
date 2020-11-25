@@ -23,6 +23,20 @@ source "${HELPER}"
 
 function blob_fixup() {
     case "${1}" in
+        system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml)
+            ;&
+        system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml)
+            ;&
+        system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml)
+            ;&
+        system_ext/etc/permissions/qcrilhook.xml)
+            ;&
+        system_ext/etc/permissions/telephonyservice.xml)
+            sed -i "s/\/product\/framework\//\/system_ext\/framework\//g" "${2}"
+            ;;
+        system_ext/lib64/lib-imsvideocodec.so)
+            grep -q "libgui_shim.so" "${2}" || "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
+            ;;
         vendor/bin/pm-service)
             grep -q libutils-v33.so "${2}" || "${PATCHELF}" --add-needed "libutils-v33.so" "${2}"
             ;;
@@ -35,9 +49,6 @@ function blob_fixup() {
         vendor/etc/init/init.sony-modem-switcher.rc)
             sed -i "s/\/system\/bin\/sony-modem-switcher/\/vendor\/bin\/sony-modem-switcher/" "${2}"
             sed -i -r 's/persist\.somc\.cust\.modem(0|1)/persist.vendor.somc.sim\1/' "${2}"
-            ;;
-        product/lib64/lib-imsvideocodec.so)
-            grep -q "libgui_shim.so" "${2}" || "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
             ;;
     esac
 }
