@@ -186,6 +186,10 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc \
     ueventd.tama.rc
 
+# Configstore
+PRODUCT_PACKAGES += \
+    disable_configstore
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.3-service \
