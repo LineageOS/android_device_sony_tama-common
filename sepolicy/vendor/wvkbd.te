@@ -5,3 +5,10 @@ init_daemon_domain(wvkbd)
 
 get_prop(wvkbd, hwservicemanager_prop)
 get_prop(wvkbd, vendor_tee_listener_prop)
+
+binder_call(wvkbd, hal_secd_default)
+
+allow wvkbd hal_secd_hwservice:hwservice_manager find;
+
+allow wvkbd ion_device:chr_file r_file_perms;
+allow wvkbd tee_device:chr_file rw_file_perms;
