@@ -2,6 +2,7 @@
 set_prop(vendor_init, demo_prop)
 set_prop(vendor_init, ril_subscription_prop)
 set_prop(vendor_init, soundtrigger_prop)
+set_prop(vendor_init, suntory_prop)
 set_prop(vendor_init, vendor_bt_a2dp_prop)
 set_prop(vendor_init, vendor_camera_sensor_prop)
 set_prop(vendor_init, vendor_dpm_feature_prop)
