@@ -9,6 +9,9 @@ allow hal_fingerprint_default fpc_extension_service:hwservice_manager { add find
 # Allow hal_fingerprint_default to find hal_idd_hwservice
 allow hal_fingerprint_default hal_idd_hwservice:hwservice_manager { find };
 
+# Allow hal_fingerprint_default to find hal_perf_hwservice
+allow hal_fingerprint_default hal_perf_hwservice:hwservice_manager find;
+
 # /dev/qseecom
 allow hal_fingerprint_default tee_device:chr_file rw_file_perms;
 
