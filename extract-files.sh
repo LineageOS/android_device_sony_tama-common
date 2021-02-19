@@ -23,10 +23,12 @@ source "${HELPER}"
 
 function blob_fixup() {
     case "${1}" in
-    product/lib64/libdpmframework.so)
-        patchelf --replace-needed "libcutils.so" "libcutils-v29.so" "${2}"
-        patchelf --add-needed "libcutils.so" "${2}"
-        ;;
+        product/lib/libdpmframework.so)
+            sed -i "s/libhidltransport.so/libcutils-v29.so\x00\x00\x00/" "${2}"
+            ;;
+        product/lib64/libdpmframework.so)
+            sed -i "s/libhidltransport.so/libcutils-v29.so\x00\x00\x00/" "${2}"
+            ;;
     esac
 }
 
