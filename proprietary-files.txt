@@ -1,4 +1,4 @@
-# Sony package version: 52.1.A.2.1
+# Sony package version: 52.1.A.3.92
 
 # ADSP
 vendor/bin/adsprpcd
@@ -1115,9 +1115,6 @@ vendor/lib/libthermal_engine.so
 vendor/bin/time_daemon
 vendor/lib64/libtime_genoff.so
 vendor/lib/libtime_genoff.so
-
-# Touchscreen
-vendor/bin/touch_id.sh
 
 # Trusted Execution Environment connector
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
