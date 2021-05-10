@@ -328,6 +328,7 @@ on boot
     chown system system /data/vendor/sensors
 
     write sys/devices/virtual/input/clearpad/post_probe_start 1
+    write /sys/devices/virtual/input/lge_touch/charge_out 1
     chown system system /sys/devices/common_touch/touch/cover_mode
     chmod 0600 /sys/devices/common_touch/touch/cover_mode
     restorecon /sys/devices/common_touch/touch/cover_mode
@@ -380,6 +381,32 @@ on boot
     chown system system /sys/devices/common_touch/touch/cover_mode
     chmod 0600 /sys/devices/common_touch/touch/cover_mode
     restorecon /sys/devices/common_touch/touch/cover_mode
+
+    # for atmel
+    chown system system /sys/devices/virtual/input/lge_touch/glove_mode
+    chmod 0600 /sys/devices/virtual/input/lge_touch/glove_mode
+    restorecon /sys/devices/virtual/input/lge_touch/glove_mode
+    chown system system /sys/devices/virtual/input/lge_touch/aod_mode
+    chmod 0600 /sys/devices/virtual/input/lge_touch/aod_mode
+    restorecon /sys/devices/virtual/input/lge_touch/aod_mode
+    chown system system /sys/devices/virtual/input/lge_touch/cover_mode
+    chmod 0600 /sys/devices/virtual/input/lge_touch/cover_mode
+    restorecon /sys/devices/virtual/input/lge_touch/cover_mode
+    chown system system /sys/devices/virtual/input/lge_touch/stamina_mode
+    chmod 0600 /sys/devices/virtual/input/lge_touch/stamina_mode
+    restorecon /sys/devices/virtual/input/lge_touch/stamina_mode
+    chown system system /sys/devices/virtual/input/lge_touch/power_control
+    chmod 0600 /sys/devices/virtual/input/lge_touch/power_control
+    restorecon /sys/devices/virtual/input/lge_touch/power_control
+    chown system system /sys/devices/virtual/input/lge_touch/sidekey_status
+    chmod 0660 /sys/devices/virtual/input/lge_touch/sidekey_status
+    restorecon /sys/devices/virtual/input/lge_touch/sidekey_status
+    chown system system /sys/devices/virtual/input/lge_touch/register_r
+    chmod 0600 /sys/devices/virtual/input/lge_touch/register_r
+    restorecon /sys/devices/virtual/input/lge_touch/register_r
+    chown system system /sys/devices/virtual/input/lge_touch/register_w
+    chmod 0600 /sys/devices/virtual/input/lge_touch/register_w
+    restorecon /sys/devices/virtual/input/lge_touch/register_w
 
     chown system system /sys/devices/virtual/water_detection/wdet/wdet_polling_restart
     chmod 0660 /sys/devices/virtual/water_detection/wdet/wdet_polling_restart
