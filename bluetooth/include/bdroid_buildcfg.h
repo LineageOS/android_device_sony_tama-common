@@ -42,8 +42,8 @@ typedef struct {
 
 static const device_t devices[] = {
     {"akari", "Xperia XZ2"},
-    {"akatsuki", "Xperia XZ2 Compact"},
-    {"apollo", "Xperia XZ3"},
+    {"akatsuki", "Xperia XZ3"},
+    {"apollo", "Xperia XZ2 Compact"},
 };
 
 static inline const char *BtmGetDefaultName()
