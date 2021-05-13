@@ -1,4 +1,4 @@
-# Sony package version: 52.1.A.3.92
+# Sony package version: 52.1.A.3.137
 
 # ADSP
 vendor/bin/adsprpcd
@@ -612,7 +612,9 @@ vendor/etc/msm_irqbalance.conf
 # Key provision daemon
 vendor/bin/keyprovd
 vendor/lib/libQTEEConnector_vendor.so
+vendor/lib/libqtikeymaster4.so
 vendor/lib64/libQTEEConnector_vendor.so
+vendor/lib64/libqtikeymaster4.so
 
 # Kobjeventd
 vendor/bin/hw/kobjeventd
