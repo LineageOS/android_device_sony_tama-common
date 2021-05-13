@@ -409,7 +409,10 @@ PRODUCT_COPY_FILES += \
 # WiFi Display
 PRODUCT_PACKAGES += \
     libnl \
-    libwfdaac_vendor
+    libwfdaac_vendor \
+    libavservices_minijail \
+    libavservices_minijail_vendor \
+    libavservices_minijail.vendor
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
