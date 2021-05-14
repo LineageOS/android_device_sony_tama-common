@@ -86,12 +86,15 @@
          "oldname:newname", one per entry. -->
     <string-array name="config_displayModeMappings" translatable="false">
         <item>Super-vivid:Super-vivid</item>
+        <item>Super_vivid:Super-Vivid</item>
         <item>Standard:DCI-P3</item>
         <item>standard:dci-p3</item>
         <item>Professional:sRGB</item>
         <item>professional:srgb</item>
         <item>SMH0_70:HDR-mode</item>
+        <item>SMH0_100:HDR-Mode</item>
         <item>SMHG_70:SDR-vivid</item>
+        <item>SMHG_100:HDR-vivid</item>
         <item>hal_native_identity:Panel-native</item>
     </string-array>
 
