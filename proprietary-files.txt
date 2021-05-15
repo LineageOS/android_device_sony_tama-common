@@ -968,8 +968,7 @@ vendor/radio/qcril_database/upgrade/3_version_update_wps_config.sql
 vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql
 
-# secd
-vendor/bin/hw/vendor.semc.hardware.secd@1.0-service
+# SECD firmware
 vendor/etc/firmware/tzsuntory.b00
 vendor/etc/firmware/tzsuntory.b01
 vendor/etc/firmware/tzsuntory.b02
@@ -988,12 +987,6 @@ vendor/etc/firmware/tztpm.b05
 vendor/etc/firmware/tztpm.b06
 vendor/etc/firmware/tztpm.b07
 vendor/etc/firmware/tztpm.mdt
-vendor/lib/libdevice_security_vendor.so
-vendor/lib/libsuntory.so
-vendor/lib/vendor.somc.hardware.security.secd@1.0.so
-vendor/lib64/libdevice_security_vendor.so
-vendor/lib64/libsuntory.so
-vendor/lib64/vendor.somc.hardware.security.secd@1.0.so
 
 # SCT
 vendor/bin/sct_service
