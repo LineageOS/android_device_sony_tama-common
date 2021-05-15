@@ -72,11 +72,6 @@ on post-fs
 
     write /dev/ipa 1
 
-service sec_nvm /vendor/bin/sec_nvm
-    class core
-    user system
-    group system
-
 on post-fs-data
     mkdir /data/tombstones 0771 system system
     mkdir /tombstones/modem 0771 system system
@@ -148,11 +143,6 @@ on charger
     start vendor.power_off_alarm
     setprop sys.usb.configfs 1
 
-service hdcp_srm /vendor/bin/hdcp_srm
-    class core
-    user system
-    group system
-
 service thermal-engine /system/vendor/bin/thermal-engine
    class main
    user root
@@ -215,9 +205,3 @@ on property:init.svc.vendor.hwcomposer-2-3=running
 
 on property:init.svc.vendor.hwcomposer-2-3=restarting
     stop ppd
-
-service energy-awareness /system/vendor/bin/energy-awareness
-    class main
-    user system
-    group system
-    oneshot
