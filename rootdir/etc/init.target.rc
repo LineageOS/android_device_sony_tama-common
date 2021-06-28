@@ -38,6 +38,13 @@ on early-init
     symlink /data/tombstones /tombstones
 
 on init
+    # Setup permission for Power HAL
+    chown system system /dev/stune/top-app/schedtune.boost
+    chown system system /dev/cpu_dma_latency
+
+    chmod 0664 /dev/stune/top-app/schedtune.boost
+    chmod 0664 /dev/cpu_dma_latency
+
     write /dev/stune/foreground/schedtune.sched_boost_no_override 1
     write /dev/stune/top-app/schedtune.sched_boost_no_override 1
     write /dev/stune/schedtune.colocate 0
