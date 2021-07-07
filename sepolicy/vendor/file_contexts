@@ -35,7 +35,7 @@
 /mnt/idd/startup-prober(/.*)?             u:object_r:startupprober_file:s0
 
 # NFC
-/dev/pn54x                u:object_r:nfc_device:s0
+/dev/pn553                u:object_r:nfc_device:s0
 
 # PERSIST
 /mnt/vendor/persist/credmgr/credmgr2.db     u:object_r:persist_credmgr_file:s0
