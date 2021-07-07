@@ -288,9 +288,6 @@ PRODUCT_PACKAGES += \
     SecureElement \
     Tag
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf
-
 # Perfd (dummy)
 PRODUCT_PACKAGES += \
     libqti-perfd-client
