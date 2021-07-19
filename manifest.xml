@@ -751,16 +751,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <fqname>@1.0::IExtLight/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.semc.hardware.thermal</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISomcThermalEngineWrapper</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ISomcThermalEngineWrapper/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.semc.hardware.vibrator</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
