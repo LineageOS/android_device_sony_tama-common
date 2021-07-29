@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2021 The LineageOS Project
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="64dp"
+    android:height="64dp" android:viewportHeight="64" android:viewportWidth="64">
+
+    <path android:fillColor="#FFFFFFFF"
+        android:pathData="m23.94,29.72 l1.84,1.84 -1.84,0.93v-2.77zM28.92,34.7 L51.61,57.39 54.93,54.07l-47.33,-47.33 -3.32,3.32 15.69,15.69v10.38l-8.57,-3.71v-3.9c1.26,-0.73 2.11,-2.08 2.11,-3.64 0,-2.33 -1.89,-4.22 -4.22,-4.22 -2.33,0 -4.22,1.89 -4.22,4.22 0,1.56 0.85,2.9 2.11,3.64v6.67l12.79,5.55v5.61c-2.52,0.84 -4.35,3.18 -4.35,5.99 0,3.49 2.84,6.33 6.33,6.33 3.5,0 6.34,-2.84 6.34,-6.33 0,-2.8 -1.83,-5.15 -4.35,-5.99v-9.11l4.97,-2.53zM23.94,16.01v-1.68h4.56l-6.55,-8.98 -3.66,5.01 5.64,5.64zM36.74,28.8v-3.92h2.11v-8.44h-8.44v6.03l6.34,6.33zM46.66,13.16c0,1.75 0.27,3.1 0.81,4.06s1.32,1.44 2.35,1.44c1.21,0 2.13,-0.47 2.76,-1.41 0.64,-0.94 0.96,-2.3 0.96,-4.09 0,-3.5 -1.18,-5.26 -3.53,-5.26 -1.08,0 -1.9,0.48 -2.48,1.43 -0.58,0.95 -0.86,2.22 -0.86,3.83zM42.61,13.16c0,-2.28 0.67,-4.2 2,-5.77 1.34,-1.58 3.13,-2.37 5.37,-2.37 2.46,0 4.35,0.71 5.65,2.14 1.3,1.42 1.95,3.42 1.95,6s-0.68,4.61 -2.05,6.13c-1.36,1.51 -3.29,2.27 -5.79,2.27 -2.3,0 -4.07,-0.75 -5.3,-2.25 -1.22,-1.5 -1.84,-3.55 -1.84,-6.15zM52.02,28.25v11.76h-3.95v-11.76h-5.51v-4.21h14.97v4.21zM51.67,42.27c-0.93,0 -1.8,0.1 -2.6,0.29l3.45,3.46c0.16,0.05 0.33,0.11 0.5,0.18 0.75,0.29 1.3,0.58 1.66,0.88l1.78,-3.24c-1.32,-1.05 -2.92,-1.57 -4.8,-1.57zM43.12,48.9c-0.09,0.53 -0.14,1.1 -0.14,1.68 0,2.46 0.72,4.45 2.15,5.95 1.29,1.34 2.99,2.08 5.11,2.22l1.36,-1.37 -2.14,-2.14c-0.82,-0.23 -1.43,-0.66 -1.8,-1.23 -0.29,-0.46 -0.55,-0.82 -0.72,-1.29l-3.83,-3.83zM56.39,49.88 L57.2,50.69v-0.81h-0.81z" />
+</vector>
