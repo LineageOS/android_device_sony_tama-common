@@ -1588,3 +1588,11 @@ service kobjeventd /vendor/bin/hw/kobjeventd
     user system
     group system
     class main
+
+on property:service.game.boost=on
+    stop thermal-engine
+    setprop service.game.boost on_done
+
+on property:service.game.boost=off
+    start thermal-engine
+    setprop service.game.boost off_done
