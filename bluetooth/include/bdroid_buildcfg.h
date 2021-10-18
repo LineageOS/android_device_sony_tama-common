@@ -44,6 +44,7 @@ static const device_t devices[] = {
     {"akari", "Xperia XZ2"},
     {"akatsuki", "Xperia XZ3"},
     {"xz2c", "Xperia XZ2 Compact"},
+    {"aurora", "Xperia XZ2 Premium"},
 };
 
 static inline const char *BtmGetDefaultName()
