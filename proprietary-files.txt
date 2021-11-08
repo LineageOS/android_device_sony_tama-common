@@ -444,9 +444,9 @@ vendor/firmware/a630_zap.b01
 vendor/firmware/a630_zap.b02
 vendor/firmware/a630_zap.mdt
 
-# Graphics (Vulkan) - from PNX - RKQ1.200906.002
-vendor/lib/hw/vulkan.adreno.so|b2680e5b899d75fa3f82b457635e15c6998202a4
-vendor/lib64/hw/vulkan.adreno.so|fcc99045aaf7eed0925ac2b64ff2af085212954a
+# Graphics (Vulkan)
+vendor/lib/hw/vulkan.sdm845.so
+vendor/lib64/hw/vulkan.sdm845.so
 
 # Hotword enrollment
 -product/priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk|1cbc6ae6490cfc6e16619773809b9afcc9998f91;PRESIGNED
