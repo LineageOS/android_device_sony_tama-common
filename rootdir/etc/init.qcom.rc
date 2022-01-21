@@ -893,9 +893,6 @@ on property:sys.user.0.ce_available=true
     # Setting property to inform that partitions are mounted
     setprop vendor.idd.partitions_ready 1
 
-on property:ro.boot.verifiedbootstate=orange
-    setprop persist.sys.usb.config adb
-
 # Shutdown notification for ChargeService
 on property:sys.shutdown.requested=*
     write /sys/class/power_supply/battery/running_status 2
