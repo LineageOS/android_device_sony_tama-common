@@ -16,6 +16,23 @@
       "message": "Late to the game, but should use the same changeID and author next time:\nhttps://review.lineageos.org/q/I66631f1f38a3e3a16e6d3dad87c83d0a98e6f851",
       "revId": "5510e8390a8812b4759ba682b820215acaef76d4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8cd066fc_f887d3d8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 26916
+      },
+      "writtenOn": "2022-01-27T15:48:22Z",
+      "side": 1,
+      "message": "Yes, sorry. Just learned how to do that yesterday. Still in the learning process here. Will do it next time.",
+      "revId": "5510e8390a8812b4759ba682b820215acaef76d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
