@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9f378126_4b73eb6e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 26916
+      },
+      "writtenOn": "2022-01-28T14:51:44Z",
+      "side": 1,
+      "message": "Waiting for https://github.com/TheMuppets/proprietary_vendor_sony/pull/250 to get merged",
+      "revId": "0db699d813dd2e43d3c83f6b1acaa24053c53d9a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
