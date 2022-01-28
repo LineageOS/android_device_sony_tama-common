@@ -97,11 +97,13 @@ vendor/etc/sony_effect/znr_param_48k_MainSubSoiCam.tbl
 vendor/etc/sony_effect/znr_param_48k_NoCam.tbl
 vendor/etc/sony_effect/znr_param_48k_SubSemCam.tbl
 vendor/etc/sony_effect/znr_param_48k_SubSoiCam.tbl
+vendor/lib64/librebuffering.so
 vendor/lib64/soundfx/libasphere.so
 vendor/lib64/soundfx/libqcbassboost.so
 vendor/lib64/soundfx/libqcreverb.so
 vendor/lib64/soundfx/libqcvirt.so
 vendor/lib64/soundfx/libshoebox.so
+vendor/lib/librebuffering.so
 vendor/lib/libznr.so
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libqcbassboost.so
