@@ -167,6 +167,12 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 PRODUCT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
 PRODUCT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
 
+# Soong
+SOONG_CONFIG_NAMESPACES += eglExt
+SOONG_CONFIG_eglExt += \
+    displayArray
+SOONG_CONFIG_eglExt_displayArray := true
+
 # Treble
 BOARD_VNDK_VERSION := current
 
