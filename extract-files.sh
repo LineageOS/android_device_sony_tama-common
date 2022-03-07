@@ -30,7 +30,7 @@ function blob_fixup() {
             sed -i "s/libhidltransport.so/libcutils-v29.so\x00\x00\x00/" "${2}"
             ;;
         product/lib64/lib-imsvideocodec.so)
-            ${PATCHELF} --add-needed "lib-imsvtshim.so" "${2}"
+            "${PATCHELF}" --add-needed "lib-imsvtshim.so" "${2}"
             ;;
     esac
 }
