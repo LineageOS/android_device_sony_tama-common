@@ -1,0 +1,18 @@
+type modemconfig_app, domain;
+
+app_domain(modemconfig_app)
+
+# Needed to get access to /data/data/com.sony.modemconfig
+# Only getattr and search are requested since modemconfig does not write to its own directory
+# /data/data/com.sony.modemconfig only has two empty subdirs
+dontaudit modemconfig_app app_data_file:dir { getattr search };
+
+# Access services that should be available to all apps
+allow modemconfig_app app_api_service:service_manager find;
+
+# Access isub service
+allow modemconfig_app radio_service:service_manager find;
+
+set_prop(modemconfig_app, vendor_somc_cust_prop)
+
+allow modemconfig_app cgroup:file w_file_perms;

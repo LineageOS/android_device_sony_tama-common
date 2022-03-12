@@ -1,0 +1,32 @@
+# The modem_switcher service receives SIM configuration
+# detection messages from ModemConfig.apk and loads the
+# specified .mbn configuration file into the qcom radio
+# modem. It is necessary to support VoLTE/IMS for some
+# providers.
+
+on boot
+  start modem_switcher
+
+
+# triggered by ModemConfig.apk in
+#   modemconfig/ModemConfigService.kt handleSubscription()
+on property:persist.vendor.somc.cust.modem0=*
+  setprop persist.somc.cust.modem0 ${persist.vendor.somc.cust.modem0}
+
+on property:persist.vendor.somc.cust.modem1=*
+  setprop persist.somc.cust.modem1 ${persist.vendor.somc.cust.modem0}
+
+# sony-modem-switcher uses this property as input
+# requires ro.actionable_compatible_property.enabled=false
+on property:persist.somc.cust.modem0=*
+  start modem_switcher
+
+on property:persist.somc.cust.modem1=*
+  start modem_switcher
+
+# Modem-switcher service
+service modem_switcher /vendor/bin/sony-modem-switcher
+  user root
+  group root system radio
+  disabled
+  oneshot

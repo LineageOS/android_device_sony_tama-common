@@ -737,6 +737,14 @@ vendor/etc/init/vendor.somc.hardware.miscta@1.0-service.rc
 -vendor/lib64/libmiscta.so
 vendor/lib64/vendor.somc.hardware.miscta@1.0.so
 
+# Modem switcher
+vendor/odm/bin/sony-modem-switcher:vendor/bin/sony-modem-switcher
+vendor/odm/lib64/libMiscTaWrapper.so:vendor/lib64/libMiscTaWrapper.so
+vendor/odm/lib/libMiscTaWrapper.so:vendor/lib/libMiscTaWrapper.so
+vendor/odm/lib64/vendor.somc.hardware.modemswitcher@1.0.so:vendor/lib64/vendor.somc.hardware.modemswitcher@1.0.so
+vendor/odm/lib/vendor.somc.hardware.modemswitcher@1.0.so:vendor/lib/vendor.somc.hardware.modemswitcher@1.0.so
+vendor/odm/bin/hw/vendor.somc.hardware.modemswitcher@1.0-service:vendor/bin/hw/vendor.somc.hardware.modemswitcher@1.0-service
+
 # Neural networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.2-service-qti
 vendor/etc/init/android.hardware.neuralnetworks@1.2-service-qti.rc

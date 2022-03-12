@@ -16,3 +16,10 @@ ro.semc                         u:object_r:exported_default_prop:s0
 
 # PowerHAL
 vendor.powerhal.           u:object_r:vendor_power_prop:s0
+
+# Modemswitcher props.
+persist.somc.cust.              u:object_r:vendor_somc_cust_prop:s0
+persist.somc.modemswitcher.     u:object_r:vendor_somc_modemswitcher_prop:s0
+persist.vendor.somc.            u:object_r:vendor_somc_cust_prop:s0
+somc.cust.                      u:object_r:cust_debug_system_prop:s0
+sony.modemswitcher.             u:object_r:vendor_somc_modemswitcher_prop:s0
