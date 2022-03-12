@@ -1,0 +1,49 @@
+
+type modem-switcher, domain;
+type modem-switcher_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(modem-switcher)
+
+# Allow access to the HALs
+hal_client_domain(modem-switcher, hal_allocator)
+
+# Allow modem-switcher, to use hw-binder service
+hwbinder_use(modem-switcher)
+
+# Allow binder communication with hal_miscta_default
+binder_call(modem-switcher, hal_miscta_default)
+
+# Allow binder communication with hal_modemswitcher_default
+binder_call(modem-switcher, hal_modemswitcher_default)
+
+# Allow modem-switcher to find hal_miscta_default
+allow modem-switcher hal_miscta_hwservice:hwservice_manager find;
+
+# Allow modem-switcher to find hal_modemswitcher_default
+allow modem-switcher hal_modemswitcher_hwservice:hwservice_manager find;
+
+# Allow modem-switcher to find hidl_memory
+allow modem-switcher hidl_memory_hwservice:hwservice_manager find;
+
+# Allow modem-switcher to read files in /oem
+r_dir_file(modem-switcher, oemfs)
+
+# Allow modem-switcher to read files in /vendor
+r_dir_file(modem-switcher, vendor_file)
+
+# Allow modem-switcher to get cust_system_prop
+get_prop(modem-switcher, cust_system_prop)
+
+# Allow modem-switcher to get cust_debug_system_prop
+get_prop(modem-switcher, cust_debug_system_prop)
+
+# Allow modem-switcher to get hwservicemanager_prop
+get_prop(modem-switcher, hwservicemanager_prop)
+
+# Allow modem-switcher to get Sony vendor properties
+get_prop(modem-switcher, sony_prop)
+get_prop(modem-switcher, vendor_radio_prop)
+get_prop(modem-switcher, vendor_somc_cust_prop)
+
+# Allow modem-switcher to set vendor_somc_modemswitcher_prop
+set_prop(modem-switcher, vendor_somc_modemswitcher_prop)

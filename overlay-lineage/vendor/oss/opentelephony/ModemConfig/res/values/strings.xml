@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="modem_config_path" translatable="false">/vendor/modemconf</string>
+</resources>

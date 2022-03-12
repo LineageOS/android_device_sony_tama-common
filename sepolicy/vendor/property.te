@@ -1,3 +1,5 @@
+type cust_debug_system_prop, property_type;
+type cust_system_prop, property_type;
 type vendor_semc_version_cust_active_prop, property_type;
 type vendor_bt_a2dp_prop, property_type;
 type vendor_dpm_feature_prop, property_type;
@@ -11,4 +13,6 @@ type somc_camera_prop, property_type;
 type suntory_prop, property_type;
 type vendor_wifi_prop, property_type;
 type vendor_cover_state_prop, property_type;
+type vendor_somc_cust_prop, property_type;
+type vendor_somc_modemswitcher_prop, property_type;
 vendor_internal_prop(vendor_power_prop)
