@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "93a97d74_f65f3c96",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30683
+      },
+      "writtenOn": "2022-03-20T03:05:18Z",
+      "side": 1,
+      "message": "Hello,\n\nCan you please assign an appropriate reviewer for this patch?\n\nMany thanks,\nColin",
+      "revId": "cc22c404b8a7294d990da4acb3079d38e33dea2c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
