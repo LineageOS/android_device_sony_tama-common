@@ -16,6 +16,24 @@
       "message": "Hello,\n\nCan you please assign a reviewer for this patchset?\n\nMany thanks,\nColin S.\n",
       "revId": "62b43a46fe3645da2dcf680ec52bb028d3898946",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7368d680_8227c19b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 26916
+      },
+      "writtenOn": "2022-03-25T13:24:51Z",
+      "side": 1,
+      "message": "Hello,\n\nit\u0027s better to pick the changes made by luk directly so the original author isn\u0027t lost. I\u0027ve done that already locally. If you want I can upload the changes and you can test them. Or you can do that and re-upload and abandoning these.\n\nAlso, we use \"tama-common\" as prefix now and after a colon the first letter should be uppercase.\n\nLet me know if you want to do that (cause I don\u0027t want to ignore your contribution; so pls don\u0027t get me wrong) or if I can upload the changes.\n\nOh and for the future you can assign the changes to me.",
+      "parentUuid": "e7b0e8cd_09c17bad",
+      "revId": "62b43a46fe3645da2dcf680ec52bb028d3898946",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
