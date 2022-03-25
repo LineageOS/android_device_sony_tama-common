@@ -8,6 +8,7 @@ persist.vendor.ese.             u:object_r:vendor_nfc_prop:s0
 ro.audio.soundtrigger.          u:object_r:soundtrigger_prop:s0
 vendor.wlan.                    u:object_r:vendor_wifi_prop:s0
 vendor.keyprovd.suntory.prov    u:object_r:suntory_prop:s0
+ro.semc.                         u:object_r:exported_default_prop:s0
 ro.vendor.semc.                 u:object_r:sony_prop:s0
 ro.vendor.sony.                 u:object_r:sony_prop:s0
 persist.vendor.mlog_qmi.        u:object_r:vendor_radio_prop:s0
