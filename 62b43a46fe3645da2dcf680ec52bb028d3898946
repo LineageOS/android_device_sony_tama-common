@@ -52,6 +52,24 @@
       "parentUuid": "7368d680_8227c19b",
       "revId": "62b43a46fe3645da2dcf680ec52bb028d3898946",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "eb6fd79b_96c3e202",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 26916
+      },
+      "writtenOn": "2022-03-25T20:03:04Z",
+      "side": 1,
+      "message": "I\u0027ve picked all of these:\nhttps://review.lineageos.org/q/topic:ganges-ims\n\nAnd this one seems to be a good pick too:\nhttps://review.lineageos.org/c/LineageOS/android_device_sony_nile-common/+/244213\n\nAnd yes, you\u0027ll need to resolve the conflicts. I\u0027m always using the `-n` flag with cherry-picking so no commit is done and I\u0027m able to change the commit message properly. Also I\u0027ve setup meld as my merge tool so I can easily resolve conflicts with `git mergetool`.\n\nI would prefer to abandon these changes because keeping the original author (which is luk) is a better aproach. I really appreciate your contributions. If you want to upload with picked changes from luk feel free. Or if you want I can upload them myself on sunday evening (CEST).",
+      "parentUuid": "aed0e186_9b3192c5",
+      "revId": "62b43a46fe3645da2dcf680ec52bb028d3898946",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
