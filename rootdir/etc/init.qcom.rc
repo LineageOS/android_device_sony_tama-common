@@ -1070,10 +1070,10 @@ service vendor-sensor-sh /vendor/bin/init.qcom.sensors.sh
     oneshot
 
 on property:persist.vendor.somc.cust.modem0=*
-    setprop persist.somc.cust.modem0 ${persist.vendor.somc.cust.modem0}
+    setprop persist.vendor.somc.sim0 ${persist.vendor.somc.cust.modem0}
 
 on property:persist.vendor.somc.cust.modem1=*
-    setprop persist.somc.cust.modem1 ${persist.vendor.somc.cust.modem1}
+    setprop persist.vendor.somc.sim1 ${persist.vendor.somc.cust.modem1}
 
 service qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
     class late_start
