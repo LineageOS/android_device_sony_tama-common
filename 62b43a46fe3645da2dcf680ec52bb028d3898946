@@ -124,6 +124,24 @@
       "parentUuid": "dfc5c76b_40e15aae",
       "revId": "62b43a46fe3645da2dcf680ec52bb028d3898946",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9a4faf38_ca46b2bb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30683
+      },
+      "writtenOn": "2022-03-26T21:21:03Z",
+      "side": 1,
+      "message": "The most important changes are in 327484. These are primarily\n\n1. To obtain sony-modem-switcher from SODP binaries instead of stock ROMs. I haven\u0027t been able to find it on stock. It\u0027s not in vendor, and my extraction tools aren\u0027t working for system. Perhaps you\u0027ll have more luck there. I\u0027ve also switched to homegrown rc files as, again, they\u0027re not in my ROMs.\n\n2. sepolicy. The sepolicy for tama-common is completely different from ganges… and not at all merge-compatible with it. It needs a lot of tweaking to make it work.\n\nThe rest is just configuration, individually cherry-picked.\n\nI won\u0027t be offended if you want to re-work this, particularly if you can source the proprietary files from wherever you usually get them. But you\u0027re probably going to need my sepolicy changes. I definitely need 327042.",
+      "parentUuid": "9d541ac6_f3d1010c",
+      "revId": "62b43a46fe3645da2dcf680ec52bb028d3898946",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
