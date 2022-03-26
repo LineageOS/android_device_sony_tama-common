@@ -106,6 +106,24 @@
       "parentUuid": "dcd4b5e9_03658fa5",
       "revId": "62b43a46fe3645da2dcf680ec52bb028d3898946",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9d541ac6_f3d1010c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 26916
+      },
+      "writtenOn": "2022-03-26T20:23:50Z",
+      "side": 1,
+      "message": "Thank you. I\u0027ll check it once I\u0027m back home (tomorrow evening). Can you abandon changes we don\u0027t need? I see there are many which aren\u0027t in nile-common. Why do we need them?",
+      "parentUuid": "dfc5c76b_40e15aae",
+      "revId": "62b43a46fe3645da2dcf680ec52bb028d3898946",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
