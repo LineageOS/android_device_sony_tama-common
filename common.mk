@@ -166,6 +166,7 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     idd.fstab \
     init.class_main.sh \
+    init.modem_switcher.rc \
     init.msm.usb.configfs.rc \
     init.qcom.early_boot.sh \
     init.qcom.factory.rc \
@@ -181,7 +182,8 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     qns.fstab \
     sensor_json_transfer.sh \
-    ueventd.qcom.rc
+    ueventd.qcom.rc \
+    vendor.somc.hardware.modemswitcher@1.0-service.rc
 
 # Display
 PRODUCT_PACKAGES += \
@@ -277,13 +279,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
 # Modem switcher
-ifneq ($(filter %_kirin %_mermaid,$(TARGET_PRODUCT)),)
 PRODUCT_PACKAGES += \
     ModemConfig
 
 PRODUCT_COPY_FILES += \
     $(shell find $(LOCAL_PATH)/modem-config -type f -printf '%p:$(TARGET_COPY_OUT_VENDOR)/modemconf/%P\n')
-endif
 
 # Net
 PRODUCT_PACKAGES += \

@@ -1,4 +1,7 @@
 # Sony package version: 52.1.A.3.92
+#   Also obtain "SW_binaries_for_Xperia_Android_11_4.14_v9a_tama.img" from
+#      <https://developer.sony.com/file/download/software-binaries-for-aosp-android-11-0-kernel-4-14-tama/>
+#   and mount on top of the Sony image at "vendor/odm"
 
 # ADSP
 vendor/bin/adsprpcd
@@ -738,12 +741,10 @@ vendor/etc/init/vendor.somc.hardware.miscta@1.0-service.rc
 vendor/lib64/vendor.somc.hardware.miscta@1.0.so
 
 # Modem switcher
-bin/sony-modem-switcher:vendor/bin/sony-modem-switcher
-etc/init/init.sony-modem-switcher.rc:vendor/etc/init/init.sony-modem-switcher.rc
-lib64/libMiscTaWrapper.so:vendor/lib64/libMiscTaWrapper.so
-vendor/bin/hw/vendor.somc.hardware.modemswitcher@1.0-service
-vendor/etc/init/vendor.somc.hardware.modemswitcher@1.0-service.rc
-vendor/lib64/vendor.somc.hardware.modemswitcher@1.0.so
+vendor/odm/bin/sony-modem-switcher:vendor/bin/sony-modem-switcher
+vendor/odm/lib64/libMiscTaWrapper.so:vendor/lib64/libMiscTaWrapper.so
+vendor/odm/lib64/vendor.somc.hardware.modemswitcher@1.0.so:vendor/lib64/vendor.somc.hardware.modemswitcher@1.0.so
+vendor/odm/bin/hw/vendor.somc.hardware.modemswitcher@1.0-service:vendor/bin/hw/vendor.somc.hardware.modemswitcher@1.0-service
 
 # Neural networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.2-service-qti
