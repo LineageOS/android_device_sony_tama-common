@@ -18,3 +18,4 @@ allow hal_modemswitcher_default firmware_file:lnk_file r_file_perms;
 
 # Allow hal_modemswitcher_default to get vendor_radio_prop
 get_prop(hal_modemswitcher_default, vendor_radio_prop)
+get_prop(hal_modemswitcher_default, sony_prop)
