@@ -160,6 +160,24 @@
       "parentUuid": "9a4faf38_ca46b2bb",
       "revId": "62b43a46fe3645da2dcf680ec52bb028d3898946",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "179e159a_c59cb459",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30683
+      },
+      "writtenOn": "2022-03-26T23:31:42Z",
+      "side": 1,
+      "message": "v5 now gets it from the stock ROM. The deltas relative to luks are now as small as I think we can get away with, but perhaps they could be even smaller yet. I\u0027ll let you look at this on Sunday or whenever you get around for it. Thanks for iterating on this. My device is quite useless to me without IMS.",
+      "parentUuid": "677849a8_75a870c1",
+      "revId": "62b43a46fe3645da2dcf680ec52bb028d3898946",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
