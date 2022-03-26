@@ -47,3 +47,7 @@ ro.vendor.qti.va_aosp.support=1
 # Wireless display
 persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
+
+# Required by service modem_switcher, which triggers
+# on non-standard property names
+ro.actionable_compatible_property.enabled=false

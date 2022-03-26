@@ -44,3 +44,6 @@ get_prop(modem-switcher, vendor_radio_prop)
 
 # Allow modem-switcher to set sony_modemswitcher_prop
 set_prop(modem-switcher, sony_modemswitcher_prop)
+
+# Allow modem-switcher to set cust_system_prop
+set_prop(modem-switcher, cust_system_prop)
