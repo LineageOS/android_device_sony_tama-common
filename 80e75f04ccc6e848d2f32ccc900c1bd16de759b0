@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "dc0708eb_30598bd3",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 741,
+      "author": {
+        "id": 30683
+      },
+      "writtenOn": "2022-03-27T22:17:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1acb3423_57506e43",
+      "revId": "80e75f04ccc6e848d2f32ccc900c1bd16de759b0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d8aadc56_113d535d",
@@ -31,6 +49,24 @@
       "writtenOn": "2022-03-27T19:35:48Z",
       "side": 1,
       "message": "should be changed to system/etc/init/init.sony-modem-switcher.rc",
+      "revId": "80e75f04ccc6e848d2f32ccc900c1bd16de759b0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a683b77c_da6654f8",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 742,
+      "author": {
+        "id": 30683
+      },
+      "writtenOn": "2022-03-27T22:17:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d8aadc56_113d535d",
       "revId": "80e75f04ccc6e848d2f32ccc900c1bd16de759b0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
@@ -52,6 +88,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a6a90b19_fb0a780d",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 743,
+      "author": {
+        "id": 30683
+      },
+      "writtenOn": "2022-03-27T22:17:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1f997651_ae20ba83",
+      "revId": "80e75f04ccc6e848d2f32ccc900c1bd16de759b0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "08864b3a_39c31914",
@@ -65,6 +119,24 @@
       "writtenOn": "2022-03-27T19:35:48Z",
       "side": 1,
       "message": "should be changed to system/lib64/vendor.somc.hardware.modemswitcher@1.0.so",
+      "revId": "80e75f04ccc6e848d2f32ccc900c1bd16de759b0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7263d026_44fed9b5",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 744,
+      "author": {
+        "id": 30683
+      },
+      "writtenOn": "2022-03-27T22:17:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "08864b3a_39c31914",
       "revId": "80e75f04ccc6e848d2f32ccc900c1bd16de759b0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
