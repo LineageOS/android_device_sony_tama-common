@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4ef5afdc_045cdc61",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 741,
+      "author": {
+        "id": 30683
+      },
+      "writtenOn": "2022-03-27T22:05:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "796beedf_bc521857",
+      "revId": "28b561fcf47f9689d5b5d5ed332f4cc5b019cfc0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "7fc7d549_dff116df",
@@ -35,6 +53,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "27be5106_879550c7",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 742,
+      "author": {
+        "id": 30683
+      },
+      "writtenOn": "2022-03-27T22:05:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7fc7d549_dff116df",
+      "revId": "28b561fcf47f9689d5b5d5ed332f4cc5b019cfc0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "9aae6582_ce57e29f",
@@ -48,6 +84,24 @@
       "writtenOn": "2022-03-27T20:08:53Z",
       "side": 1,
       "message": "should be changed to system/lib64/libMiscTaWrapper.so:vendor/lib64/libMiscTaWrapper.so",
+      "revId": "28b561fcf47f9689d5b5d5ed332f4cc5b019cfc0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2f37673a_d8c7caf6",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 743,
+      "author": {
+        "id": 30683
+      },
+      "writtenOn": "2022-03-27T22:05:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9aae6582_ce57e29f",
       "revId": "28b561fcf47f9689d5b5d5ed332f4cc5b019cfc0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
