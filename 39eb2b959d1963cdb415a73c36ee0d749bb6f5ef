@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a8ff5bc3_56d8e326",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30683
+      },
+      "writtenOn": "2022-03-27T22:26:36Z",
+      "side": 1,
+      "message": "All proposed changes accepted except for 327482, where the sepolicy is adapted instead of being removed. The diffs make it a no-op either way. I think this is ready for re-review and picking.\n\nAre we collecting developer documentation, such as what was in my cover letter patch (327483; abandoned), anywhere?",
+      "revId": "39eb2b959d1963cdb415a73c36ee0d749bb6f5ef",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
