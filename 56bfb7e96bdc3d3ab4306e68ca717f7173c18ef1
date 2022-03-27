@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1114af39_8f45bb4e",
+        "filename": "sepolicy/vendor/init.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 26916
+      },
+      "writtenOn": "2022-03-27T20:08:53Z",
+      "side": 0,
+      "message": "any reason you removed this?",
+      "revId": "56bfb7e96bdc3d3ab4306e68ca717f7173c18ef1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
