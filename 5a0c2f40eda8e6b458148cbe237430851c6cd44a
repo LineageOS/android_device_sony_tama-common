@@ -16,6 +16,24 @@
       "message": "empty commit",
       "revId": "5a0c2f40eda8e6b458148cbe237430851c6cd44a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1dcebad4_6add5928",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30683
+      },
+      "writtenOn": "2022-03-27T22:13:40Z",
+      "side": 1,
+      "message": "Empty commit was intended as cover letter. Removed.\n\nAre we collecting information like this anywhere in dev documentation? It took me quite a long time to figure out how the modem switcher is supposed to work.",
+      "parentUuid": "f7643549_c6aab9ed",
+      "revId": "5a0c2f40eda8e6b458148cbe237430851c6cd44a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
