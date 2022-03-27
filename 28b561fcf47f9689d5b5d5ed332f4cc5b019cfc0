@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "47f65851_2118edd8",
+        "filename": "common.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 280,
+      "author": {
+        "id": 26916
+      },
+      "writtenOn": "2022-03-27T20:27:34Z",
+      "side": 0,
+      "message": "this should be already done in 327482",
+      "revId": "28b561fcf47f9689d5b5d5ed332f4cc5b019cfc0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
