@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "58e85e3e_374e129e",
+        "filename": "common.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 280,
+      "author": {
+        "id": 26916
+      },
+      "writtenOn": "2022-03-27T19:55:38Z",
+      "side": 1,
+      "message": "ifneq-check itself should be removed",
+      "revId": "56bfb7e96bdc3d3ab4306e68ca717f7173c18ef1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b0a2bee2_e0448022",
+        "filename": "sepolicy/vendor/init.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 26916
+      },
+      "writtenOn": "2022-03-27T19:55:38Z",
+      "side": 1,
+      "message": "qns_file will fail to build - we have qns_data_file in line 13. I guess we could change it here from qns_file to qns_data_file and remove line 13 entirely.",
+      "revId": "56bfb7e96bdc3d3ab4306e68ca717f7173c18ef1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
