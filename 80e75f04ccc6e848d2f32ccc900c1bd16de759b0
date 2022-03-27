@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1acb3423_57506e43",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 741,
+      "author": {
+        "id": 26916
+      },
+      "writtenOn": "2022-03-27T19:35:48Z",
+      "side": 1,
+      "message": "should be changed to system/bin/sony-modem-switcher",
+      "revId": "80e75f04ccc6e848d2f32ccc900c1bd16de759b0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d8aadc56_113d535d",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 742,
+      "author": {
+        "id": 26916
+      },
+      "writtenOn": "2022-03-27T19:35:48Z",
+      "side": 1,
+      "message": "should be changed to system/etc/init/init.sony-modem-switcher.rc",
+      "revId": "80e75f04ccc6e848d2f32ccc900c1bd16de759b0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1f997651_ae20ba83",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 743,
+      "author": {
+        "id": 26916
+      },
+      "writtenOn": "2022-03-27T19:35:48Z",
+      "side": 1,
+      "message": "should be changed to system/lib64/libMiscTaWrapper.so",
+      "revId": "80e75f04ccc6e848d2f32ccc900c1bd16de759b0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "08864b3a_39c31914",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 744,
+      "author": {
+        "id": 26916
+      },
+      "writtenOn": "2022-03-27T19:35:48Z",
+      "side": 1,
+      "message": "should be changed to system/lib64/vendor.somc.hardware.modemswitcher@1.0.so",
+      "revId": "80e75f04ccc6e848d2f32ccc900c1bd16de759b0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
