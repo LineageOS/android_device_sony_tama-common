@@ -16,6 +16,24 @@
       "message": "Please start with a capital A after tama-common:",
       "revId": "cc9ab1dbb97e442faf64920177a25bac01cd2ad9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3ee087d7_7c5986d8",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 30683
+      },
+      "writtenOn": "2022-03-27T22:18:29Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6eeb21d2_267434d4",
+      "revId": "cc9ab1dbb97e442faf64920177a25bac01cd2ad9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
