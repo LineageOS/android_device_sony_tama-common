@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b070ad1f_f9a30a1b",
+        "filename": "system.prop",
+        "patchSetId": 3
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 26916
+      },
+      "writtenOn": "2022-03-28T20:32:20Z",
+      "side": 1,
+      "message": "This will fail to build in lineage-19.1: https://github.com/LineageOS/android_build/commit/2e881585717f1e89b7c78d8830caab6150c75844#diff-39ea0bfbfc0c8ded6e3f2a6671bf622bdda9cee9d281e51d60259645c9c714ca\n\nBut maybe we should consider using the PRODUCT_ACTIONABLE_COMPATIBLE_PROPERTY_DISABLE flag instead? And for 19.1 we need to find another way how to override that.",
+      "revId": "a10c3e2f1e1b3ee8db914764faa92757a96457c6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
