@@ -16,6 +16,24 @@
       "message": "This will fail to build in lineage-19.1: https://github.com/LineageOS/android_build/commit/2e881585717f1e89b7c78d8830caab6150c75844#diff-39ea0bfbfc0c8ded6e3f2a6671bf622bdda9cee9d281e51d60259645c9c714ca\n\nBut maybe we should consider using the PRODUCT_ACTIONABLE_COMPATIBLE_PROPERTY_DISABLE flag instead? And for 19.1 we need to find another way how to override that.",
       "revId": "a10c3e2f1e1b3ee8db914764faa92757a96457c6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0b050f89_62b19cc4",
+        "filename": "system.prop",
+        "patchSetId": 3
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 30683
+      },
+      "writtenOn": "2022-03-28T22:33:48Z",
+      "side": 1,
+      "message": "If ro.actionable_compatible_property.enabled has been removed, we will need to patch the sony-modem-switcher binary to use a different property we can trigger on. We already patch this binary for paths.\n\nAny of these property prefixes will work: https://android.googlesource.com/platform/system/core/+/master/init/action_parser.cpp#46\n\nWe can use any compatible name no longer than\n\n    persist.somc.cust.modem0\n\nHow about\n\n    persist.vendor.somc.sim0\n\nIf you agree with the name, or you have a better one, I\u0027ll give it a go.",
+      "parentUuid": "b070ad1f_f9a30a1b",
+      "revId": "a10c3e2f1e1b3ee8db914764faa92757a96457c6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
