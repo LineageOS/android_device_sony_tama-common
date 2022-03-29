@@ -52,6 +52,24 @@
       "parentUuid": "0b050f89_62b19cc4",
       "revId": "a10c3e2f1e1b3ee8db914764faa92757a96457c6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "818ecc5c_ed9e99b1",
+        "filename": "system.prop",
+        "patchSetId": 3
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 26916
+      },
+      "writtenOn": "2022-03-29T07:09:14Z",
+      "side": 1,
+      "message": "error: found duplicate sysprop assignments:\nro.actionable_compatible_property.enabled\u003dfalse\nro.actionable_compatible_property.enabled\u003dtrue\n\nLatter one is generated from variable ADDITIONAL_SYSTEM_PROPERTIES.",
+      "parentUuid": "f146428b_b7d0d048",
+      "revId": "a10c3e2f1e1b3ee8db914764faa92757a96457c6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
