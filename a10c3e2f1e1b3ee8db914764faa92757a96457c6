@@ -88,6 +88,24 @@
       "parentUuid": "818ecc5c_ed9e99b1",
       "revId": "a10c3e2f1e1b3ee8db914764faa92757a96457c6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0a8aeb8f_661d9684",
+        "filename": "system.prop",
+        "patchSetId": 3
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 30683
+      },
+      "writtenOn": "2022-03-30T01:54:30Z",
+      "side": 1,
+      "message": "It is entirely possible that it does work… with degraded functionality. The service triggers on both boot and on property change. If ro.actionable_compatible_property.enabled\u003dtrue, the sony-modem-service will still trigger and perform its checks on boot. This may mean it takes an additional reboot to activate IMS.\n\nWe can do better than that. See v4 which patches the binary.\n\nMy test procedure is as follows:\n\n1. Poweroff and remove SIM\n2. Restart\n3. (as root) `setprop persist.vendor.somc.cust.modem0 anysim`\n4. (as root) verify `getprop persist.vendor.somc.sim0` is \"anysim\"\n5. Poweroff, reinstall SIM, reboot. Wait a moment for the system to come up.\n6. Verify that `getprop persist.vendor.somc.sim0` has an S-config and that IMS registration completes\n\nIt is not a sufficient test to simply boot with no SIM. Without a SIM, the previous IMS configuration remains flashed.",
+      "parentUuid": "2d20902b_c367c241",
+      "revId": "a10c3e2f1e1b3ee8db914764faa92757a96457c6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
