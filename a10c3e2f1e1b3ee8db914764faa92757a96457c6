@@ -106,6 +106,24 @@
       "parentUuid": "2d20902b_c367c241",
       "revId": "a10c3e2f1e1b3ee8db914764faa92757a96457c6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d7366332_db0059a2",
+        "filename": "system.prop",
+        "patchSetId": 3
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 26916
+      },
+      "writtenOn": "2022-03-30T06:52:46Z",
+      "side": 1,
+      "message": "Looks good. I\u0027ll test it now on 18.1 and 19.1.",
+      "parentUuid": "0a8aeb8f_661d9684",
+      "revId": "a10c3e2f1e1b3ee8db914764faa92757a96457c6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
