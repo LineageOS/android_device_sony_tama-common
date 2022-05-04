@@ -743,7 +743,8 @@ system/etc/init/init.sony-modem-switcher.rc:vendor/etc/init/init.sony-modem-swit
 system/lib64/libMiscTaWrapper.so:vendor/lib64/libMiscTaWrapper.so
 vendor/bin/hw/vendor.somc.hardware.modemswitcher@1.0-service
 vendor/etc/init/vendor.somc.hardware.modemswitcher@1.0-service.rc
-vendor/lib64/vendor.somc.hardware.modemswitcher@1.0.so
+# Taken from SW_binaries_for_Xperia_Android_11_4.14_v9a_ganges
+vendor/lib64/vendor.somc.hardware.modemswitcher@1.0.so|981a107e38343e091b9ff5696b39bdb342ff48cb
 
 # Neural networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.2-service-qti
