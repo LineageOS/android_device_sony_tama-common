@@ -8,7 +8,6 @@ ro.config.vc_call_vol_steps=11
 
 # Bluetooth
 persist.bluetooth.avrcpversion=avrcp16
-ro.bluetooth.library_name=libbluetooth_qti.so
 
 # Charger
 ro.charger.enable_suspend=true
