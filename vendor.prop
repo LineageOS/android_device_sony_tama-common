@@ -105,11 +105,12 @@ ro.soc.model=SDM845
 # Display post-processing
 ro.vendor.display.cabl=2
 
+# DPM
+persist.vendor.dpm.idletimer.mode=default
+persist.vendor.dpmhalservice.enable=1
+
 # DRM
 drm.service.enabled=true
-
-# DPM
-persist.vendor.dpm.feature=1
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
