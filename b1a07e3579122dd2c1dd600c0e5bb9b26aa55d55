@@ -16,6 +16,24 @@
       "message": "Doesn\u0027t this break A2DP offload?",
       "revId": "b1a07e3579122dd2c1dd600c0e5bb9b26aa55d55",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "58304b3a_04ef6b74",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 26916
+      },
+      "writtenOn": "2022-09-18T19:10:29Z",
+      "side": 1,
+      "message": "Not sure. I\u0027ve tested pairing with my JBL box and could play music. Couldn\u0027t hear any bad sound. Not sure how to test otherwise. I don\u0027t have a bluetooth headphone.",
+      "parentUuid": "74a8dbfd_7317997b",
+      "revId": "b1a07e3579122dd2c1dd600c0e5bb9b26aa55d55",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
