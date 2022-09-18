@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "74a8dbfd_7317997b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-09-18T18:52:44Z",
+      "side": 1,
+      "message": "Doesn\u0027t this break A2DP offload?",
+      "revId": "b1a07e3579122dd2c1dd600c0e5bb9b26aa55d55",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
