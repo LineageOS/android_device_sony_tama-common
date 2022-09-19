@@ -70,6 +70,24 @@
       "parentUuid": "d7618713_8a5f8b51",
       "revId": "b1a07e3579122dd2c1dd600c0e5bb9b26aa55d55",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "aeeea4cf_52058d31",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-09-19T17:04:29Z",
+      "side": 1,
+      "message": "Yes, it looks fine. For me it broke A2DP offload.",
+      "parentUuid": "0227ad1e_140e0a2c",
+      "revId": "b1a07e3579122dd2c1dd600c0e5bb9b26aa55d55",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
