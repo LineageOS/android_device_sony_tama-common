@@ -52,6 +52,24 @@
       "parentUuid": "58304b3a_04ef6b74",
       "revId": "b1a07e3579122dd2c1dd600c0e5bb9b26aa55d55",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0227ad1e_140e0a2c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 26916
+      },
+      "writtenOn": "2022-09-19T16:44:47Z",
+      "side": 1,
+      "message": "Looks good to me:\n```\n$ adb logcat BTAudioProviderStub:I *:S\n--------- beginning of main\n09-19 18:41:21.639  1035  1052 I BTAudioProviderStub: updateAudioConfiguration - SessionType\u003dA2DP_HARDWARE_OFFLOAD_ENCODING_DATAPATH\n09-19 18:41:21.639  1035  1052 I BTAudioProviderStub: updateAudioConfiguration - SessionType\u003dA2DP_HARDWARE_OFFLOAD_ENCODING_DATAPATH has NO session\n09-19 18:41:21.640  1035  1052 I BTAudioProviderStub: setLowLatencyModeAllowed - SessionType\u003dA2DP_HARDWARE_OFFLOAD_ENCODING_DATAPATH\n09-19 18:41:21.640  1035  1052 I BTAudioProviderStub: setLowLatencyModeAllowed - SessionType\u003dA2DP_HARDWARE_OFFLOAD_ENCODING_DATAPATH has NO session\n09-19 18:41:22.963  1035  1052 I BTAudioProviderStub: streamStarted - SessionType\u003dA2DP_HARDWARE_OFFLOAD_ENCODING_DATAPATH, status\u003dSUCCESS\n09-19 18:41:26.235  1035  1052 I BTAudioProviderStub: streamSuspended - SessionType\u003dA2DP_HARDWARE_OFFLOAD_ENCODING_DATAPATH, status\u003dSUCCESS\n09-19 18:42:18.419  1035  1052 I BTAudioProviderStub: streamStarted - SessionType\u003dA2DP_HARDWARE_OFFLOAD_ENCODING_DATAPATH, status\u003dSUCCESS\n09-19 18:42:21.620  1035  1052 I BTAudioProviderStub: streamSuspended - SessionType\u003dA2DP_HARDWARE_OFFLOAD_ENCODING_DATAPATH, status\u003dSUCCESS\n09-19 18:42:21.860  1035  1052 I BTAudioProviderStub: streamStarted - SessionType\u003dA2DP_HARDWARE_OFFLOAD_ENCODING_DATAPATH, status\u003dSUCCESS\n```",
+      "parentUuid": "d7618713_8a5f8b51",
+      "revId": "b1a07e3579122dd2c1dd600c0e5bb9b26aa55d55",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
