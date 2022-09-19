@@ -34,6 +34,24 @@
       "parentUuid": "74a8dbfd_7317997b",
       "revId": "b1a07e3579122dd2c1dd600c0e5bb9b26aa55d55",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d7618713_8a5f8b51",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-09-19T16:08:22Z",
+      "side": 1,
+      "message": "Do you see anything like this?\n\n\u003e  09-19 16:08:02.645   989   989 I BTAudioProviderStub: startSession_2_1 - SessionType\u003dA2DP_HARDWARE_OFFLOAD_DATAPATH, AudioConfiguration\u003d[{.codecConfig \u003d {.codecType \u003d LDAC, .encodedAudioBitrate \u003d 990000, .peerMtu \u003d 883, .isScmstEnabled \u003d 0, .config \u003d {.ldacConfig \u003d {.sampleRate \u003d RATE_96000, .channelMode \u003d STEREO, .qualityIndex \u003d QUALITY_ABR, .bitsPerSample \u003d BITS_32}}}}]\n\nIf session type is A2DP_SOFTWARE_ENCODING_DATAPATH then it\u0027s not offloading.",
+      "parentUuid": "58304b3a_04ef6b74",
+      "revId": "b1a07e3579122dd2c1dd600c0e5bb9b26aa55d55",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
