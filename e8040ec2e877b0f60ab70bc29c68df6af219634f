@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3fd2ec17_e50a9f91",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-09-22T17:31:34Z",
+      "side": 1,
+      "message": "You derped original commit metadata (at least authorship) from this point on.",
+      "revId": "e8040ec2e877b0f60ab70bc29c68df6af219634f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
