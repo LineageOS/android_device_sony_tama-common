@@ -34,7 +34,7 @@ function blob_fixup() {
             sed -i -r 's/persist\.somc\.cust\.modem(0|1)/persist.vendor.somc.sim\1/' "${2}"
             ;;
         product/lib64/lib-imsvideocodec.so)
-            "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
+            grep -q "libgui_shim.so" "${2}" || "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
             ;;
     esac
 }
