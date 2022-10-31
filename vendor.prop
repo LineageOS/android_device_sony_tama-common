@@ -139,7 +139,6 @@ ro.vendor.audio.soundtrigger.hist.duration=1500
 
 # Radio
 DEVICE_PROVISIONED=1
-ro.telephony.block_binder_thread_on_incoming_calls=false
 ril.subscription.types=NV,RUIM
 rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 persist.vendor.radio.apm_sim_not_pwdn=0
