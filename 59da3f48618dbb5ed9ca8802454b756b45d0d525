@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3c5732e7_0000d594",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 26916
+      },
+      "writtenOn": "2022-11-30T21:08:02Z",
+      "side": 1,
+      "message": "Breaks audio for some reason with logcat spam as follows:\n```\nE AudioSystem-JNI: AudioSystem::listAudioPorts error -19\nE AudioSystem-JNI: Command failed for android_media_AudioSystem_initStreamVolume: -19\nE AS.AudioService: Failed to initStreamVolume (1) for stream 11\nE AS.AudioService: VSS(): initStreamVolume failed with 1 will retry\n```",
+      "revId": "59da3f48618dbb5ed9ca8802454b756b45d0d525",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
