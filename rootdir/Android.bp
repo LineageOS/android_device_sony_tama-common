@@ -1,0 +1,10 @@
+//
+// Copyright (C) 2022 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+prebuilt_etc {
+    name: "ueventd.tama.rc",
+    filename: "ueventd.rc",
+    src: "etc/ueventd.tama.rc",
+    device_specific: true,
+}
