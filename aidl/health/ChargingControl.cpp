@@ -19,8 +19,7 @@ namespace lineage {
 namespace health {
 
 static const std::vector<ChargingEnabledNode> kChargingEnabledNodes = {
-    {"/sys/class/power_supply/battery/input_suspend", "0", "1"},
-    {"/sys/class/power_supply/battery/charging_enabled", "1", "0"},
+    {"/sys/class/power_supply/battery/smart_charging_interruption", "0", "1"},
 };
 
 static bool fileExists(const std::string& path) {
