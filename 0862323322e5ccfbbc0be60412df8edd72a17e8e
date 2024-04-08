@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fca61bca_9cde1943",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-04-08T21:54:32Z",
+      "side": 1,
+      "message": "Pick Mike\u0027s change instead and move to dual role USB HAL at the same time.",
+      "revId": "0862323322e5ccfbbc0be60412df8edd72a17e8e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
