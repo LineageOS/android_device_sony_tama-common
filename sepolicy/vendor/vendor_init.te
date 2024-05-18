@@ -14,11 +14,6 @@ allow vendor_init block_device:lnk_file relabelfrom;
 allow vendor_init tad_block_device:blk_file setattr;
 allow vendor_init tad_block_device:lnk_file relabelto;
 
-allow vendor_init proc_sysctl_autogroup:file w_file_perms;
-allow vendor_init proc_sysctl_schedboost:file w_file_perms;
-
-set_prop(vendor_init, vendor_power_prop)
-
 # Allow vendor init to set cust_system_prop
 set_prop(vendor_init, cust_system_prop)
 
