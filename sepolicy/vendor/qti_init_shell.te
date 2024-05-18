@@ -1,3 +1,2 @@
-allow qti_init_shell proc_sysctl_autogroup:file w_file_perms;
-allow qti_init_shell proc_sysctl_schedboost:file w_file_perms;
+allow qti_init_shell proc_sched:file w_file_perms;
 allow qti_init_shell sysfs:file { setattr write };
