@@ -104,6 +104,7 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.2-impl \
     audio.r_submix.default \
     audio.usb.default \
+    libaudioroute.vendor \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
@@ -157,7 +158,9 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.common@1.0.vendor \
     android.hardware.camera.device@3.4.vendor \
     android.hardware.camera.provider@2.4.vendor \
-    libgui_shim
+    libcamera_metadata.vendor \
+    libgui_shim \
+    libjpeg.vendor
 
 # Component overrides
 PRODUCT_COPY_FILES += \
@@ -220,7 +223,8 @@ PRODUCT_PACKAGES += \
 
 #Gatekeeper
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0.vendor
+    android.hardware.gatekeeper@1.0.vendor \
+    libion.vendor
 
 # GPS
 PRODUCT_COPY_FILES += \
@@ -346,6 +350,11 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-vendorcompat \
     libprotobuf-cpp-lite-vendorcompat
 
+# QMI
+PRODUCT_PACKAGES += \
+    libsqlite.vendor:64 \
+    libutilscallstack.vendor
+
 # QTI
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor
@@ -443,6 +452,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.media.audio.common.types-V2-cpp \
     libnl \
+    libpng.vendor \
+    libprocessgroup.vendor \
     libwfdaac_vendor \
     libavservices_minijail \
     libavservices_minijail_vendor \
