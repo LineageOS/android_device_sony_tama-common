@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ad59a6d7_7f3448f7",
+        "filename": "manifest.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-06-17T19:56:49Z",
+      "side": 1,
+      "message": "Not sure what the difference is, but you can leave at 1.0. The og change only changes target-level.",
+      "range": {
+        "startLine": 28,
+        "startChar": 19,
+        "endLine": 28,
+        "endChar": 22
+      },
+      "revId": "5e7b511a3b4aacb6f0bf990edfa66ed386da3f40",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
