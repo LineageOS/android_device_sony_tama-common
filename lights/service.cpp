@@ -1,50 +1,24 @@
 /*
- * Copyright 2018 The LineageOS Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
+ * SPDX-FileCopyrightText: 2018-2024 The LineageOS Project
+ * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "android.hardware.light@2.0-service.sony_sdm845"
+#include "Lights.h"
 
 #include <android-base/logging.h>
-#include <hidl/HidlTransportSupport.h>
+#include <android/binder_manager.h>
+#include <android/binder_process.h>
 
-#include "Light.h"
-
-using android::hardware::configureRpcThreadpool;
-using android::hardware::joinRpcThreadpool;
-
-using android::hardware::light::V2_0::ILight;
-using android::hardware::light::V2_0::implementation::Light;
-
-using android::OK;
-using android::status_t;
+using ::aidl::android::hardware::light::Lights;
 
 int main() {
-    android::sp<ILight> service = new Light();
+    ABinderProcess_setThreadPoolMaxThreadCount(0);
+    std::shared_ptr<Lights> lights = ndk::SharedRefBase::make<Lights>();
 
-    configureRpcThreadpool(1, true);
+    const std::string instance = std::string() + Lights::descriptor + "/default";
+    binder_status_t status = AServiceManager_addService(lights->asBinder().get(), instance.c_str());
+    CHECK_EQ(status, STATUS_OK);
 
-    status_t status = service->registerAsService();
-    if (status != OK) {
-        LOG(ERROR) << "Cannot register Light HAL service.";
-        return 1;
-    }
-
-    LOG(INFO) << "Light HAL service ready.";
-
-    joinRpcThreadpool();
-
-    LOG(ERROR) << "Light HAL service failed to join thread pool.";
-    return 1;
+    ABinderProcess_joinThreadPool();
+    return EXIT_FAILURE;  // should not reach
 }
