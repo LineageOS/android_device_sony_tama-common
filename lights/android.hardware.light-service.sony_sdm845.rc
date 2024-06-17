@@ -27,8 +27,7 @@ on boot
     chown system system /sys/class/leds/blue/ramp_step_ms
     chown system system /sys/class/leds/blue/start_idx
 
-service vendor.light-hal-2-0 /vendor/bin/hw/android.hardware.light@2.0-service.sony_sdm845
-    interface android.hardware.light@2.0::ILight default
+service vendor.light-sony_sdm845 /vendor/bin/hw/android.hardware.light-service.sony_sdm845
     class hal
     user system
     group system

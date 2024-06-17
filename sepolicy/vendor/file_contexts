@@ -73,7 +73,7 @@
 /(vendor|system/vendor)/bin/wvkbd			u:object_r:wvkbd_exec:s0
 
 # Vendor HALs
-/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.sony_sdm845       u:object_r:hal_light_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.light-service\.sony_sdm845       u:object_r:hal_light_default_exec:s0
 /(vendor|system/vendor)/bin/hw/fpc_fingerprint@2\.1_HIDL-service		        u:object_r:hal_fingerprint_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.semc\.hardware\.secd@1\.0-service		u:object_r:hal_secd_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.semc\.system\.idd@1\.0-service    		u:object_r:hal_idd_default_exec:s0
