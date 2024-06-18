@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0398166e_73137dcd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2024-06-18T20:04:25Z",
+      "side": 1,
+      "message": "You might want to do the opposite: https://review.lineageos.org/q/I4922d72ab60ca1aae78c010aeb610f9bca9012cb",
+      "revId": "41e43bd561ec8d2e12b7fa3e46c7c781a0fe4734",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
