@@ -948,8 +948,8 @@ vendor/lib64/vendor.somc.hardware.swiqi@1.0.so;MODULE_SUFFIX=_vendor
 # MiscTA
 vendor/bin/hw/vendor.somc.hardware.miscta@1.0-service
 vendor/etc/init/vendor.somc.hardware.miscta@1.0-service.rc
--vendor/lib/libmiscta.so
--vendor/lib64/libmiscta.so
+vendor/lib/libmiscta.so
+vendor/lib64/libmiscta.so
 vendor/lib64/vendor.somc.hardware.miscta@1.0.so
 
 # Modem switcher
@@ -1294,8 +1294,8 @@ vendor/bin/tad
 # TA QMI
 vendor/bin/ta_qmi_service
 vendor/bin/taimport_vendor
--vendor/lib/libta.so
--vendor/lib64/libta.so
+vendor/lib/libta.so
+vendor/lib64/libta.so
 
 # Trimarea
 vendor/etc/firmware/tztpm.b00
@@ -1314,11 +1314,11 @@ vendor/bin/thermal-engine
 vendor/lib/hw/thermal.somc.so
 vendor/lib/libsomc_thermal.so
 vendor/lib/libthermal_engine.so
--vendor/lib/libthermalclient.so
+vendor/lib/libthermalclient.so
 vendor/lib64/hw/thermal.somc.so
 vendor/lib64/libsomc_thermal.so
 vendor/lib64/libthermal_engine.so
--vendor/lib64/libthermalclient.so
+vendor/lib64/libthermalclient.so
 vendor/lib64/vendor.semc.hardware.thermal@1.0.so
 
 # Time services
