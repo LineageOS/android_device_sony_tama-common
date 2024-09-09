@@ -8,10 +8,59 @@ from extract_utils.fixups_blob import (
     blob_fixup,
     blob_fixups_user_type,
 )
+from extract_utils.fixups_lib import (
+    lib_fixup_remove,
+    lib_fixup_remove_arch_suffix,
+    lib_fixup_vendorcompat,
+    lib_fixups_user_type,
+    libs_clang_rt_ubsan,
+    libs_proto_3_9_1,
+)
 from extract_utils.main import (
     ExtractUtils,
     ExtractUtilsModule,
 )
+
+namespace_imports = [
+    'device/sony/tama-common',
+    'hardware/qcom-caf/sdm845',
+    'hardware/qcom-caf/wlan',
+    'vendor/qcom/opensource/commonsys-intf/display',
+    'vendor/qcom/opensource/commonsys/display',
+    'vendor/qcom/opensource/dataservices',
+    'vendor/qcom/opensource/display',
+]
+
+def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
+    return f'{lib}_{partition}' if partition == 'vendor' else None
+
+lib_fixups: lib_fixups_user_type = {
+    libs_clang_rt_ubsan: lib_fixup_remove_arch_suffix,
+    (
+        'com.qualcomm.qti.dpm.api@1.0',
+        'com.qualcomm.qti.imscmservice@1.0',
+        'com.qualcomm.qti.imscmservice@2.0',
+        'com.qualcomm.qti.imscmservice@2.1',
+        'com.qualcomm.qti.imscmservice@2.2',
+        'com.qualcomm.qti.uceservice@2.0',
+        'com.qualcomm.qti.uceservice@2.1',
+        'libmmosal',
+        'vendor.qti.hardware.radio.ims@1.0',
+        'vendor.qti.hardware.radio.ims@1.1',
+        'vendor.qti.hardware.radio.ims@1.2',
+        'vendor.qti.hardware.radio.ims@1.3',
+        'vendor.qti.hardware.radio.ims@1.4',
+        'vendor.qti.ims.callinfo@1.0',
+        'vendor.qti.ims.rcsconfig@1.0',
+        'vendor.qti.imsrtpservice@2.0',
+        'vendor.qti.imsrtpservice@2.1',
+        'vendor.somc.hardware.swiqi@1.0',
+        'vendor.qti.hardware.wifidisplaysession@1.0',
+    ): lib_fixup_vendor_suffix,
+    (
+        'libwifi-hal-ctrl',
+    ): lib_fixup_remove,
+}
 
 blob_fixups: blob_fixups_user_type = {
     (
@@ -40,6 +89,9 @@ module = ExtractUtilsModule(
     'tama-common',
     'sony',
     blob_fixups=blob_fixups,
+    lib_fixups=lib_fixups,
+    namespace_imports=namespace_imports,
+    check_elf=True,
 )
 
 if __name__ == '__main__':
