@@ -85,6 +85,8 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/init/init.sony-modem-switcher.rc': blob_fixup()
         .regex_replace('/system/bin/sony-modem-switcher', '/vendor/bin/sony-modem-switcher')
         .regex_replace('persist.somc.cust.modem(0|1)', 'persist.vendor.somc.sim\\1'),
+    ('vendor/lib64/mediadrm/libwvdrmengine.so', 'vendor/lib64/libwvhidl.so'): blob_fixup()
+        .add_needed('libcrypto_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
