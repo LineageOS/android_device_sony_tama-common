@@ -34,6 +34,14 @@ function blob_fixup() {
         system_ext/etc/permissions/telephonyservice.xml)
             sed -i "s/\/product\/framework\//\/system_ext\/framework\//g" "${2}"
             ;;
+        system_ext/lib/libwfdmmsrc_system.so)
+            [ "$2" = "" ] && return 0
+            grep -q "libgui_shim.so" "${2}" || "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
+            ;;
+        system_ext/lib64/libwfdnative.so)
+            [ "$2" = "" ] && return 0
+            grep -q "libinput_shim.so" "${2}" || "${PATCHELF}" --add-needed "libinput_shim.so" "${2}"
+            ;;
         system_ext/lib64/lib-imsvideocodec.so)
             grep -q "libgui_shim.so" "${2}" || "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
             ;;
