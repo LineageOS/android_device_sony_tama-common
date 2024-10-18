@@ -895,16 +895,11 @@ vendor/lib64/vendor.semc.hardware.light@1.0.so
 # Media
 system/lib/libFileMux.so
 system/lib/libOmxMux.so
-system/lib/libmmosal.so
-system/lib/libmmparser_lite.so
 system/lib/vendor.somc.hardware.swiqi@1.0.so
 system/lib64/libFileMux.so
-system/lib64/libmmosal.so
-system/lib64/libmmparser_lite.so
 system/lib64/vendor.somc.hardware.swiqi@1.0.so
 vendor/bin/vppservice
 vendor/etc/init/vppservice.rc
-vendor/lib/libFileMux_proprietary.so
 vendor/lib/libOmxDsdDec.so
 vendor/lib/libOmxMux_proprietary.so
 vendor/lib/libOmxVideoDSMode.so
