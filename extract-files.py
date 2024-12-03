@@ -72,6 +72,9 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.media.audio.common.types-V2-cpp.so', 'android.media.audio.common.types-V4-cpp.so'),
     ('system_ext/lib/lib-imsvideocodec.so', 'system_ext/lib64/lib-imsvideocodec.so'): blob_fixup()
         .add_needed('libgui_shim.so'),
+    'vendor/bin/hw/android.hardware.drm@1.1-service.widevine': blob_fixup()
+        .replace_needed('libhidltransport.so', 'libhidlbase.so')
+        .remove_needed('libhwbinder.so'),
     'vendor/bin/pm-service': blob_fixup()
         .add_needed('libutils-v33.so'),
     'vendor/bin/sony-modem-switcher': blob_fixup()
