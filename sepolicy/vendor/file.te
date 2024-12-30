@@ -14,6 +14,9 @@ type fpc_vendor_data_file, file_type, data_file_type;
 type hal_fpc_fingerprint_socket, file_type;
 type sysfs_fingerprint, fs_type, sysfs_type;
 
+# Glove mode
+type sysfs_touch_glove_mode, fs_type, sysfs_type;
+
 # idd
 type idd_data_file, file_type;
 type idd_input_file, file_type;
