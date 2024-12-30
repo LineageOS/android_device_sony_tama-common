@@ -19,6 +19,15 @@
 # FPC fingerprint socket
 /dev/socket/fpc_oem		u:object_r:hal_fpc_fingerprint_socket:s0
 
+# Glove mode
+/sys/bus/platform/devices/synaptics_tcm.0/synaptics_tcm/dynamic_config/glove     u:object_r:sysfs_touch_glove_mode:s0
+/sys/devices/common_touch/touch/glove_mode                u:object_r:sysfs_touch_glove_mode:s0
+/sys/devices/platform/soc/894000.i2c/i2c-2/2-003c/synaptics_tcm.0/synaptics_tcm/dynamic_config/glove_mode     u:object_r:sysfs_touch_glove_mode:s0
+/sys/devices/virtual/input/clearpad/glove                 u:object_r:sysfs_touch_glove_mode:s0
+/sys/devices/virtual/input/input[0-9]+/glove_mode         u:object_r:sysfs_touch_glove_mode:s0
+/sys/devices/virtual/input/lge_touch/glove_mode	          u:object_r:sysfs_touch_glove_mode:s0
+/sys/devices/virtual/input/siw_touch_input/glove_mode     u:object_r:sysfs_touch_glove_mode:s0
+
 # idd
 /mnt/idd                                  u:object_r:idd_root_dir:s0
 /mnt/rca                                  u:object_r:idd_rca_dir:s0
