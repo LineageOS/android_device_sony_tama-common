@@ -1,0 +1,10 @@
+#
+# Copyright (C) 2021-2022 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+service vendor.touch-hal-1-0 /vendor/bin/hw/vendor.lineage.touch@1.0-service.tama
+    class hal
+    user system
+    group system
