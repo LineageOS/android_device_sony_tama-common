@@ -60,6 +60,8 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    'system_ext/bin/wfdservice': blob_fixup()
+        .add_needed('libwfdservice_shim_v1.so'),
     (
         'system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml',
         'system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml',
