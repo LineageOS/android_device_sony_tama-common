@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "638b8d9c_f3cee1ec",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-04-01T15:59:37Z",
+      "side": 1,
+      "message": "Move to product makefile at the same time.",
+      "revId": "a4f90fa7830addf2dd5a37dd6e391712a8f069f7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
