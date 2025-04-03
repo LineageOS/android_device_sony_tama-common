@@ -776,7 +776,6 @@ vendor/lib/vendor.qti.hardware.radio.ims@1.2.so;MODULE_SUFFIX=_vendor
 vendor/lib/vendor.qti.hardware.radio.ims@1.3.so;MODULE_SUFFIX=_vendor
 vendor/lib/vendor.qti.hardware.radio.ims@1.4.so;MODULE_SUFFIX=_vendor
 vendor/lib/vendor.qti.hardware.radio.ims@1.5.so
-vendor/lib/vendor.qti.hardware.radio.ims@1.6.so
 vendor/lib/vendor.qti.ims.callinfo@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib/vendor.qti.ims.rcsconfig@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib/vendor.qti.imsrtpservice@2.0.so;MODULE_SUFFIX=_vendor
@@ -807,12 +806,17 @@ vendor/lib64/vendor.qti.hardware.radio.ims@1.2.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.hardware.radio.ims@1.3.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.hardware.radio.ims@1.4.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.hardware.radio.ims@1.5.so
-vendor/lib64/vendor.qti.hardware.radio.ims@1.6.so
 vendor/lib64/vendor.qti.ims.callinfo@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.imsrtpservice@2.0.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.imsrtpservice@2.1-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@2.1.so;MODULE_SUFFIX=_vendor
+
+# IMS - from SW_binaries_for_Xperia_Android_12_4.19_v3a_tama
+vendor/lib/vendor.qti.hardware.radio.ims@1.6.so|cb0be4dff4d1350031daea3a041965e5b7ddc7c5
+vendor/lib/vendor.qti.hardware.radio.ims@1.7.so|4ec16b85bc6f7623e1ea51cf4133046f80d8c449
+vendor/lib64/vendor.qti.hardware.radio.ims@1.6.so|2fad92008dee75ae10242517c6fdab1d173c8b90
+vendor/lib64/vendor.qti.hardware.radio.ims@1.7.so|ba8a70a160213f0dcdaf68e59061ebcc21bf34ba
 
 # IPA
 vendor/bin/ipacm-diag
@@ -969,13 +973,11 @@ vendor/bin/irsc_util
 vendor/bin/mlog_qmi_service
 vendor/etc/sec_config
 vendor/lib/libdiag.so
-vendor/lib/libdsi_netctrl.so
 vendor/lib/libdsutils.so
 vendor/lib/libidl.so
 vendor/lib/libqcci_legacy.so
 vendor/lib/libqcmaputils.so
 vendor/lib/libqdi.so
-vendor/lib/libqdp.so
 vendor/lib/libqmi.so
 vendor/lib/libqmi_cci.so
 vendor/lib/libqmi_client_helper.so
@@ -985,13 +987,11 @@ vendor/lib/libqmi_csi.so
 vendor/lib/libqmi_encdec.so
 vendor/lib/libqmiservices.so
 vendor/lib64/libdiag.so
-vendor/lib64/libdsi_netctrl.so
 vendor/lib64/libdsutils.so
 vendor/lib64/libidl.so
 vendor/lib64/libqcci_legacy.so
 vendor/lib64/libqcmaputils.so
 vendor/lib64/libqdi.so
-vendor/lib64/libqdp.so
 vendor/lib64/libqmi.so
 vendor/lib64/libqmi_cci.so
 vendor/lib64/libqmi_client_helper.so
@@ -1000,6 +1000,12 @@ vendor/lib64/libqmi_common_so.so
 vendor/lib64/libqmi_csi.so
 vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqmiservices.so
+
+# QMI - from SW_binaries_for_Xperia_Android_12_4.19_v3a_tama
+vendor/lib/libdsi_netctrl.so|3c9bacfae9a7862efebb348213a2f494174ab69f
+vendor/lib/libqdp.so|409f7ef86b82bd12f36bd243b0b1b13d10fe8024
+vendor/lib64/libdsi_netctrl.so|c7f156dbc38f72f27c42303fb4ddaa30e108e35c
+vendor/lib64/libqdp.so|816b7d2b7158fd69e265f2537fb018b7276cd291
 
 # QTI ANT
 vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so
@@ -1017,7 +1023,6 @@ product/framework/qcrilhook.jar:system_ext/framework/qcrilhook.jar
 product/framework/qti-telephony-common.jar:system_ext/framework/qti-telephony-common.jar|91fe0ce296fc29bece6df81070b9b3b4ee41a1b4
 product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk:system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/app/IWlanService/IWlanService.apk
-vendor/bin/hw/qcrild
 vendor/bin/ATFWD-daemon
 vendor/bin/adpl
 vendor/bin/netmgrd
@@ -1045,10 +1050,8 @@ vendor/lib/libnetmgr_nr_fusion.so
 vendor/lib/libnetmgr_rmnet_ext.so
 vendor/lib/libpdmapper.so
 vendor/lib/libpdnotifier.so
-vendor/lib/libqcrilFramework.so
 vendor/lib/libqrtr.so
 vendor/lib/libqsocket.so
-vendor/lib/libril-qc-hal-qmi.so
 vendor/lib/libril-qc-ltedirectdisc.so
 vendor/lib/libril-qc-qmi-1.so
 vendor/lib/libril-qc-radioconfig.so
@@ -1086,10 +1089,8 @@ vendor/lib64/libnetmgr_rmnet_ext.so
 vendor/lib64/libnlnetmgr.so
 vendor/lib64/libpdmapper.so
 vendor/lib64/libpdnotifier.so
-vendor/lib64/libqcrilFramework.so
 vendor/lib64/libqrtr.so
 vendor/lib64/libqsocket.so
-vendor/lib64/libril-qc-hal-qmi.so
 vendor/lib64/libril-qc-ltedirectdisc.so
 vendor/lib64/libril-qc-qmi-1.so
 vendor/lib64/libril-qc-radioconfig.so
@@ -1124,6 +1125,19 @@ vendor/radio/qcril_database/upgrade/3_version_update_wps_config.sql
 vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql
 vendor/radio/qcril_database/qcril.db
+
+# RIL - from SW_binaries_for_Xperia_Android_12_4.19_v3a_tama
+vendor/bin/hw/qcrild|5a61e505b5c39f15dcdff7ca8e5045338ff553ee
+vendor/lib/libqcrilFramework.so|0f2422e9e19ee3fc395a7139d81704b8ded74a18
+vendor/lib/libril-qc-hal-qmi.so|15431d76c970e1acebd3b8c92f59f40f7ff35fa7
+vendor/lib/libril-qc-logger.so|8cd58962c8ad29c07869af028dd37baf1ec9fa9f
+vendor/lib/vendor.qti.hardware.radio.qtiradio@2.4.so|3b93e0b413f9acb1e62a3d230efcf98322e7fb78
+vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.2.so|7ad75ffee09741a071fa01b0bb70a7c30c841688
+vendor/lib64/libqcrilFramework.so|addf4d76d87c99384c10f4b85f74adfc58074134
+vendor/lib64/libril-qc-hal-qmi.so|70cfb58f7de7ea37a3882dd8a75a93b47eace610
+vendor/lib64/libril-qc-logger.so|19b562f5239d211dd37bbad03ed4e07f24b1e28a
+vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.4.so|5d5cfb531d4ed553838b7e305e6eac524b563330
+vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so|de24c00c8ad75b88fa2085e28b4dbf54c1a9aff5
 
 # Secd
 vendor/lib/libdevice_security_vendor.so
