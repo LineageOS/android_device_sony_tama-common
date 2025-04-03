@@ -831,10 +831,10 @@ vendor/etc/msm_irqbalance.conf
 # Keymaster
 vendor/lib/libkeymasterdeviceutils.so
 vendor/lib/libkeymasterprovision.so
-vendor/lib/libkeymasterutils.so;DUMMY_SHARED_LIB
+vendor/lib/libkeymasterutils.so
 vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
-vendor/lib64/libkeymasterutils.so;DUMMY_SHARED_LIB
+vendor/lib64/libkeymasterutils.so
 
 # Key provision daemon
 vendor/bin/keyprovd
