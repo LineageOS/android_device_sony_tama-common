@@ -409,7 +409,7 @@ PRODUCT_PACKAGES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.tama
+    vendor.lineage.touch-service.tama
 
 # USB
 PRODUCT_PACKAGES += \

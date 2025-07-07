@@ -1,43 +1,45 @@
 /*
- * Copyright (C) 2021-2022 The LineageOS Project
+ * SPDX-FileCopyrightText: 2025 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
-
-#define LOG_TAG "GloveModeService"
 
 #include "GloveMode.h"
 
 #include <android-base/properties.h>
-#include <android-base/strings.h>
-#include <fstream>
 
-namespace vendor {
-namespace lineage {
-namespace touch {
-namespace V1_0 {
-namespace implementation {
+using ::android::base::GetBoolProperty;
+using ::android::base::SetProperty;
+
+namespace {
 
 const std::string kGloveModePath = "/sys/devices/common_touch/touch/glove_mode";
 
-Return<bool> GloveMode::isEnabled() {
+}  // anonymous namespace
+
+namespace aidl {
+namespace vendor {
+namespace lineage {
+namespace touch {
+
+ndk::ScopedAStatus GloveMode::getEnabled(bool* _aidl_return) {
     std::ifstream file(kGloveModePath);
     bool enabled;
 
     file >> enabled;
 
-    return enabled;
+    *_aidl_return = enabled;
+    return ndk::ScopedAStatus::ok();
 }
 
-Return<bool> GloveMode::setEnabled(bool enabled) {
+ndk::ScopedAStatus GloveMode::setEnabled(bool enable) {
     std::ofstream file(kGloveModePath);
 
     file << enabled << std::flush;
 
-    return !file.fail();
+    return ndk::ScopedAStatus::ok();
 }
 
-}  // namespace implementation
-}  // namespace V1_0
 }  // namespace touch
 }  // namespace lineage
 }  // namespace vendor
+}  // namespace aidl

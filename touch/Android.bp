@@ -1,13 +1,13 @@
 //
-// Copyright (C) 2021 The LineageOS Project
+// SPDX-FileCopyrightText: 2025 The LineageOS Project
 // SPDX-License-Identifier: Apache-2.0
 //
 
 cc_binary {
-    name: "vendor.lineage.touch@1.0-service.tama",
-    init_rc: ["vendor.lineage.touch@1.0-service.tama.rc"],
-    vintf_fragments: ["vendor.lineage.touch@1.0-service.tama.xml"],
-    defaults: ["hidl_defaults"],
+    name: "vendor.lineage.touch-service.tama",
+    init_rc: ["vendor.lineage.touch-service.tama.rc"],
+    vintf_fragments: ["vendor.lineage.touch-service.tama.xml"],
+    vendor: true,
     relative_install_path: "hw",
     srcs: [
         "GloveMode.cpp",
@@ -15,10 +15,9 @@ cc_binary {
     ],
     shared_libs: [
         "libbase",
-        "libbinder",
-        "libhidlbase",
+        "liblog",
+        "libbinder_ndk",
         "libutils",
-        "vendor.lineage.touch@1.0",
+        "vendor.lineage.touch-V1-ndk",
     ],
-    vendor: true,
 }
